@@ -171,5 +171,177 @@
     "certificates": {
       "title": "Certificates and Standards"
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is our priority. Learn how we collect, use, and protect your personal data.",
+    "lastUpdated": "Last updated: October 28, 2025",
+    "sections": {
+      "overview": {
+        "title": "Overview",
+        "content": [
+          "HUBTRAC Ltd. (\"we\", \"us\", \"our\") is responsible for processing your personal data in accordance with the European Union's General Data Protection Regulation (GDPR) (EU 2016/679) and applicable national data protection laws.",
+          "This privacy policy explains what data we collect, how we use it, and what rights you have regarding your personal data."
+        ]
+      },
+      "dataCollection": {
+        "title": "What Data We Collect",
+        "content": "When using our mobile tire services, we may collect the following data:",
+        "items": [
+          "Identification data: first name, last name, title",
+          "Contact data: phone number, email address, postal address",
+          "Vehicle data: vehicle type, registration number, tire information",
+          "Location data: service location address (with your consent)",
+          "Business data: order history, invoices, payment information",
+          "Technical data: IP address, browser type, cookies (when visiting the website)"
+        ]
+      },
+      "dataUse": {
+        "title": "How We Use Your Data",
+        "content": "We use your personal data exclusively for the following purposes:",
+        "items": [
+          "Providing mobile tire services and fulfilling contractual obligations",
+          "Communicating with you regarding your orders and services",
+          "Invoicing and accounting purposes",
+          "Improving the quality of our services",
+          "Sending marketing information (only with your consent)",
+          "Fulfilling legal obligations (accounting, tax records)",
+          "Protecting our legitimate interests and rights"
+        ]
+      },
+      "dataProtection": {
+        "title": "How We Protect Your Data",
+        "content": [
+          "We implement strict technical and organizational measures to protect your personal data from unauthorized access, loss, destruction, or alteration.",
+          "Your data is stored on secure servers with encryption. Access to personal data is limited to authorized employees who need this data to perform their duties.",
+          "We do not sell or rent your data to third parties for marketing purposes without your explicit consent."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies and Tracking Technologies",
+        "content": [
+          "Our website uses cookies to improve your user experience. Cookies are small text files stored on your device.",
+          "We use the following types of cookies:"
+        ],
+        "items": [
+          "Necessary cookies: required for basic website functionality",
+          "Analytical cookies: help us understand how visitors use our website (e.g., Google Analytics)",
+          "Functional cookies: enable language preferences and customization",
+          "Marketing cookies: used for targeted advertising (only with your consent)"
+        ]
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "Under GDPR, you have the following rights:",
+        "items": [
+          "Right to access your personal data",
+          "Right to rectify incorrect or incomplete data",
+          "Right to erasure of your data (\"right to be forgotten\")",
+          "Right to restriction of processing",
+          "Right to data portability",
+          "Right to object to processing",
+          "Right to withdraw consent to data processing",
+          "Right to lodge a complaint with the competent data protection authority"
+        ]
+      },
+      "contact": {
+        "title": "Contact",
+        "content": [
+          "If you have any questions about this privacy policy or wish to exercise your rights, please contact us:",
+          "Email: privacy@hubtrac-example.com",
+          "Phone: +421 XXX XXX XXX",
+          "Address: [Company Address], Europe",
+          "Responsible person: Data Protection Officer"
+        ]
+      }
+    },
+    "questions": {
+      "title": "Questions about data protection?",
+      "content": "We're here to help with any questions regarding your personal data."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "subtitle": "Terms and conditions for HUBTRAC mobile tire service",
+    "lastUpdated": "Last updated: October 28, 2025",
+    "sections": {
+      "overview": {
+        "title": "General Terms",
+        "content": [
+          "These Terms of Service govern the rights and obligations between HUBTRAC Ltd., [Registration Number], with registered office at [Address] (hereinafter \"Provider\") and the customer (hereinafter \"Customer\") in the provision of mobile tire services for commercial vehicles.",
+          "By entering into a contract or ordering a service, the Customer confirms that they have read these Terms of Service and agree to them."
+        ]
+      },
+      "services": {
+        "title": "Scope of Services",
+        "content": "The Provider offers the following services:",
+        "items": [
+          "Mobile tire service: tire replacement, mounting and dismounting directly at the customer's location",
+          "24/7 emergency service: round-the-clock availability in case of breakdown or emergency",
+          "Tire repair: professional repair of damaged tires",
+          "Tire sales: supply and sale of HUBTRAC and other tire brands",
+          "Expert consultation: advice on selecting the right tires",
+          "Regular maintenance: checking tire pressure, wear, and tread depth"
+        ]
+      },
+      "pricing": {
+        "title": "Prices and Payment Terms",
+        "content": [
+          "Service prices are set in the Provider's current price list. Prices include labor, materials, and travel within the agreed area. Surcharges for travel outside the standard area or for services outside business hours will be communicated in advance.",
+          "Payment is due immediately after service provision or according to agreed payment terms. We accept cash, card payments, or bank transfers.",
+          "In case of payment delay, the Provider reserves the right to charge late payment interest at 0.05% per day on the outstanding amount."
+        ]
+      },
+      "warranty": {
+        "title": "Warranty and Claims",
+        "content": [
+          "We provide a 6-year warranty on all HUBTRAC tires against manufacturing defects. The warranty does not cover mechanical damage, improper use, or natural wear.",
+          "We provide a 12-month warranty on services rendered (mounting, repair).",
+          "Claims must be submitted in writing or electronically without undue delay after discovering the defect. The Provider will process the claim within 30 days of receipt."
+        ]
+      },
+      "liability": {
+        "title": "Liability and Limitation of Liability",
+        "content": [
+          "The Provider is liable for damages caused by defective service provision in accordance with applicable laws.",
+          "The Provider is not liable for damages caused by improper use of tires by the Customer, inadequate vehicle maintenance, or circumstances beyond its control (force majeure).",
+          "The Provider's liability is limited to direct damages and does not exceed the total value of the paid order.",
+          "The Customer is required to ensure safe access to the vehicle and provide necessary cooperation during service provision."
+        ]
+      },
+      "userObligations": {
+        "title": "Customer Obligations",
+        "content": "The Customer undertakes to:",
+        "items": [
+          "Provide correct and complete information about the vehicle and required services",
+          "Ensure a safe and accessible location for service performance",
+          "Pay the agreed price for services within the specified timeframe",
+          "Follow the Provider's recommendations regarding tire maintenance and use",
+          "Notify of cancellation at least 24 hours in advance (otherwise a cancellation fee may apply)",
+          "Provide necessary vehicle documentation for service performance"
+        ]
+      },
+      "disputes": {
+        "title": "Dispute Resolution",
+        "content": [
+          "The Provider undertakes to resolve any disputes with the Customer primarily through out-of-court means.",
+          "In case of a dispute, the Customer may contact the competent consumer protection authority or use the alternative dispute resolution platform.",
+          "Consumers have the right to contact the competent consumer protection authority or the EU Online Dispute Resolution platform.",
+          "Legal relationships not covered by these Terms of Service are governed by relevant provisions of applicable civil and commercial law."
+        ]
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": [
+          "The Provider reserves the right to modify these Terms of Service. Changes take effect on the day of publication on the website.",
+          "Existing customers will be informed about changes by email or other appropriate means at least 14 days before they take effect.",
+          "By continuing to use the services after changes take effect, the Customer expresses agreement with the new terms."
+        ]
+      }
+    },
+    "questions": {
+      "title": "Questions about Terms of Service?",
+      "content": "Contact us and we'll be happy to explain everything."
+    }
   }
 }

@@ -171,5 +171,177 @@
     "certificates": {
       "title": "Zertifikate und Standards"
     }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "subtitle": "Ihre Privatsphäre ist unsere Priorität. Erfahren Sie, wie wir Ihre personenbezogenen Daten erheben, verwenden und schützen.",
+    "lastUpdated": "Letzte Aktualisierung: 28. Oktober 2025",
+    "sections": {
+      "overview": {
+        "title": "Überblick",
+        "content": [
+          "HUBTRAC GmbH („wir", „uns", „unser") ist verantwortlich für die Verarbeitung Ihrer personenbezogenen Daten gemäß der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union (EU 2016/679) und den geltenden nationalen Datenschutzgesetzen.",
+          "Diese Datenschutzerklärung erläutert, welche Daten wir erheben, wie wir sie verwenden und welche Rechte Sie in Bezug auf Ihre personenbezogenen Daten haben."
+        ]
+      },
+      "dataCollection": {
+        "title": "Welche Daten wir erheben",
+        "content": "Bei der Nutzung unserer mobilen Reifenservices können wir folgende Daten erheben:",
+        "items": [
+          "Identifikationsdaten: Vor- und Nachname, Titel",
+          "Kontaktdaten: Telefonnummer, E-Mail-Adresse, Postanschrift",
+          "Fahrzeugdaten: Fahrzeugtyp, Kennzeichen, Reifeninformationen",
+          "Standortdaten: Adresse des Serviceortes (mit Ihrer Zustimmung)",
+          "Geschäftsdaten: Bestellhistorie, Rechnungen, Zahlungsinformationen",
+          "Technische Daten: IP-Adresse, Browsertyp, Cookies (beim Besuch der Website)"
+        ]
+      },
+      "dataUse": {
+        "title": "Wie wir Ihre Daten verwenden",
+        "content": "Wir verwenden Ihre personenbezogenen Daten ausschließlich für folgende Zwecke:",
+        "items": [
+          "Bereitstellung mobiler Reifenservices und Erfüllung vertraglicher Verpflichtungen",
+          "Kommunikation mit Ihnen bezüglich Ihrer Bestellungen und Dienstleistungen",
+          "Rechnungsstellung und Buchhaltungszwecke",
+          "Verbesserung der Qualität unserer Dienstleistungen",
+          "Versand von Marketinginformationen (nur mit Ihrer Zustimmung)",
+          "Erfüllung gesetzlicher Pflichten (Buchhaltung, Steueraufzeichnungen)",
+          "Schutz unserer berechtigten Interessen und Rechte"
+        ]
+      },
+      "dataProtection": {
+        "title": "Wie wir Ihre Daten schützen",
+        "content": [
+          "Wir setzen strenge technische und organisatorische Maßnahmen zum Schutz Ihrer personenbezogenen Daten vor unbefugtem Zugriff, Verlust, Zerstörung oder Veränderung um.",
+          "Ihre Daten werden auf gesicherten Servern mit Verschlüsselung gespeichert. Zugriff auf personenbezogene Daten haben nur autorisierte Mitarbeiter, die diese Daten zur Erfüllung ihrer Aufgaben benötigen.",
+          "Wir verkaufen oder vermieten Ihre Daten nicht an Dritte zu Marketingzwecken ohne Ihre ausdrückliche Zustimmung."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies und Tracking-Technologien",
+        "content": [
+          "Unsere Website verwendet Cookies, um Ihr Nutzererlebnis zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden.",
+          "Wir verwenden folgende Arten von Cookies:"
+        ],
+        "items": [
+          "Notwendige Cookies: erforderlich für die Grundfunktionalität der Website",
+          "Analytische Cookies: helfen uns zu verstehen, wie Besucher unsere Website nutzen (z.B. Google Analytics)",
+          "Funktionale Cookies: ermöglichen Sprachpräferenzen und Anpassungen",
+          "Marketing-Cookies: verwendet für zielgerichtete Werbung (nur mit Ihrer Zustimmung)"
+        ]
+      },
+      "userRights": {
+        "title": "Ihre Rechte",
+        "content": "Gemäß DSGVO haben Sie folgende Rechte:",
+        "items": [
+          "Recht auf Zugang zu Ihren personenbezogenen Daten",
+          "Recht auf Berichtigung falscher oder unvollständiger Daten",
+          "Recht auf Löschung Ihrer Daten (\"Recht auf Vergessenwerden\")",
+          "Recht auf Einschränkung der Verarbeitung",
+          "Recht auf Datenübertragbarkeit",
+          "Recht auf Widerspruch gegen die Verarbeitung",
+          "Recht auf Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+          "Recht auf Beschwerde bei der zuständigen Datenschutzbehörde"
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": [
+          "Wenn Sie Fragen zu dieser Datenschutzerklärung haben oder Ihre Rechte ausüben möchten, kontaktieren Sie uns:",
+          "E-Mail: datenschutz@hubtrac-example.com",
+          "Telefon: +49 XXX XXX XXX",
+          "Adresse: [Firmenadresse], Deutschland/Österreich",
+          "Verantwortliche Person: Datenschutzbeauftragter"
+        ]
+      }
+    },
+    "questions": {
+      "title": "Fragen zum Datenschutz?",
+      "content": "Wir sind hier, um Ihnen bei allen Fragen zu Ihren personenbezogenen Daten zu helfen."
+    }
+  },
+  "terms": {
+    "title": "Allgemeine Geschäftsbedingungen",
+    "subtitle": "Nutzungsbedingungen für den mobilen Reifenservice von HUBTRAC",
+    "lastUpdated": "Letzte Aktualisierung: 28. Oktober 2025",
+    "sections": {
+      "overview": {
+        "title": "Allgemeine Bestimmungen",
+        "content": [
+          "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Rechte und Pflichten zwischen HUBTRAC GmbH, [Handelsregisternummer], mit Sitz in [Adresse] (nachfolgend \"Anbieter\") und dem Kunden (nachfolgend \"Kunde\") bei der Erbringung mobiler Reifenservices für Nutzfahrzeuge.",
+          "Mit Abschluss des Vertrages oder Beauftragung der Dienstleistung bestätigt der Kunde, dass er diese AGB zur Kenntnis genommen hat und ihnen zustimmt."
+        ]
+      },
+      "services": {
+        "title": "Leistungsumfang",
+        "content": "Der Anbieter erbringt folgende Dienstleistungen:",
+        "items": [
+          "Mobiler Reifenservice: Reifenwechsel, Montage und Demontage direkt beim Kunden vor Ort",
+          "24/7 Notdienst: Rund-um-die-Uhr-Verfügbarkeit bei Panne oder Notfall",
+          "Reifenreparatur: Professionelle Reparatur beschädigter Reifen",
+          "Reifenverkauf: Lieferung und Verkauf von HUBTRAC und anderen Reifenmarken",
+          "Fachberatung: Beratung zur Auswahl der richtigen Reifen",
+          "Regelmäßige Wartung: Kontrolle von Reifendruck, Verschleiß und Profiltiefe"
+        ]
+      },
+      "pricing": {
+        "title": "Preise und Zahlungsbedingungen",
+        "content": [
+          "Die Preise für die Dienstleistungen sind in der aktuellen Preisliste des Anbieters festgelegt. Die Preise umfassen Arbeit, Material und eventuelle Anfahrt im vereinbarten Gebiet. Zuschläge für Anfahrten außerhalb des Standardgebietes oder für Dienstleistungen außerhalb der Geschäftszeiten werden im Voraus mitgeteilt.",
+          "Die Zahlung ist sofort nach Erbringung der Dienstleistung oder gemäß den vereinbarten Zahlungsbedingungen fällig. Wir akzeptieren Barzahlung, Kartenzahlung oder Banküberweisung.",
+          "Bei Zahlungsverzug behält sich der Anbieter das Recht vor, Verzugszinsen in Höhe von 0,05% pro Tag auf den ausstehenden Betrag zu berechnen."
+        ]
+      },
+      "warranty": {
+        "title": "Gewährleistung und Reklamationen",
+        "content": [
+          "Auf alle HUBTRAC-Reifen gewähren wir eine 6-jährige Garantie auf Herstellungsfehler. Die Garantie gilt nicht für mechanische Beschädigungen, unsachgemäße Verwendung oder natürlichen Verschleiß.",
+          "Auf erbrachte Dienstleistungen (Montage, Reparatur) gewähren wir 12 Monate Garantie.",
+          "Reklamationen sind unverzüglich nach Feststellung des Mangels schriftlich oder elektronisch geltend zu machen. Der Anbieter wird die Reklamation innerhalb von 30 Tagen nach Eingang bearbeiten."
+        ]
+      },
+      "liability": {
+        "title": "Haftung und Haftungsbeschränkung",
+        "content": [
+          "Der Anbieter haftet für Schäden, die durch mangelhafte Leistungserbringung verursacht wurden, gemäß den geltenden Rechtsvorschriften.",
+          "Der Anbieter haftet nicht für Schäden, die durch unsachgemäße Verwendung der Reifen durch den Kunden, mangelhafte Fahrzeugwartung oder Umstände außerhalb seiner Kontrolle (höhere Gewalt) verursacht wurden.",
+          "Die Haftung des Anbieters ist auf direkte Schäden beschränkt und übersteigt nicht den Gesamtwert der bezahlten Bestellung.",
+          "Der Kunde ist verpflichtet, einen sicheren Zugang zum Fahrzeug zu gewährleisten und die erforderliche Mitwirkung bei der Leistungserbringung zu leisten."
+        ]
+      },
+      "userObligations": {
+        "title": "Pflichten des Kunden",
+        "content": "Der Kunde verpflichtet sich:",
+        "items": [
+          "Korrekte und vollständige Informationen über das Fahrzeug und die benötigten Dienstleistungen bereitzustellen",
+          "Einen sicheren und zugänglichen Ort für die Durchführung des Services zu gewährleisten",
+          "Den vereinbarten Preis für die Dienstleistungen fristgerecht zu bezahlen",
+          "Die Empfehlungen des Anbieters zur Wartung und Verwendung der Reifen zu befolgen",
+          "Eine Stornierung mindestens 24 Stunden im Voraus mitzuteilen (andernfalls kann eine Stornogebühr anfallen)",
+          "Die erforderliche Fahrzeugdokumentation für die Durchführung des Services bereitzustellen"
+        ]
+      },
+      "disputes": {
+        "title": "Streitbeilegung",
+        "content": [
+          "Der Anbieter verpflichtet sich, eventuelle Streitigkeiten mit dem Kunden vorrangig außergerichtlich zu lösen.",
+          "Im Falle eines Streits kann sich der Kunde an die zuständige Verbraucherschutzbehörde wenden oder die Plattform für alternative Streitbeilegung nutzen.",
+          "Verbraucher haben das Recht, sich an die zuständige Verbraucherschutzbehörde oder Online-Streitbeilegungsplattform der EU zu wenden.",
+          "Rechtsbeziehungen, die nicht durch diese AGB geregelt sind, unterliegen den einschlägigen Bestimmungen des Bürgerlichen Gesetzbuches und des Handelsgesetzbuches."
+        ]
+      },
+      "changes": {
+        "title": "Änderungen der Bedingungen",
+        "content": [
+          "Der Anbieter behält sich das Recht vor, diese AGB zu ändern. Änderungen treten am Tag ihrer Veröffentlichung auf der Website in Kraft.",
+          "Bestehende Kunden werden über Änderungen per E-Mail oder auf andere geeignete Weise mindestens 14 Tage vor Inkrafttreten informiert.",
+          "Durch die weitere Nutzung der Dienstleistungen nach Inkrafttreten der Änderungen erklärt der Kunde sein Einverständnis mit den neuen Bedingungen."
+        ]
+      }
+    },
+    "questions": {
+      "title": "Fragen zu den AGB?",
+      "content": "Kontaktieren Sie uns und wir erklären Ihnen gerne alles."
+    }
   }
 }

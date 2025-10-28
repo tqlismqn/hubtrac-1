@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Dictionary, Locale } from '@/lib/i18n';
@@ -17,6 +17,7 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,14 +37,21 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
   ];
 
   const scrollToSection = (href: string) => {
+    setIsMobileMenuOpen(false);
+
     // Handle routing for /about page
     if (href === '/about') {
       router.push('/about');
-      setIsMobileMenuOpen(false);
       return;
     }
 
-    // Handle smooth scrolling for sections
+    // If we're not on the home page, navigate to home page with hash
+    if (pathname !== '/') {
+      router.push('/' + href);
+      return;
+    }
+
+    // Handle smooth scrolling for sections on home page
     const id = href.replace('#', '');
     if (id === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -51,7 +59,6 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
       const element = document.getElementById(id);
       element?.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -100,6 +107,7 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
               <LanguageSwitcher
                 currentLocale={currentLocale}
                 onLocaleChange={onLocaleChange}
+                isScrolled={isScrolled}
               />
 
               {/* Mobile menu button */}

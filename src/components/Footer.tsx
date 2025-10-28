@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
@@ -12,6 +12,7 @@ interface FooterProps {
 export default function Footer({ dict }: FooterProps) {
   const currentYear = new Date().getFullYear();
   const router = useRouter();
+  const pathname = usePathname();
 
   const quickLinks = [
     { label: dict.footer.quickLinks.home, href: '#home' },
@@ -34,7 +35,13 @@ export default function Footer({ dict }: FooterProps) {
       return;
     }
 
-    // Handle smooth scrolling for sections
+    // If we're not on the home page, navigate to home page with hash
+    if (pathname !== '/') {
+      router.push('/' + href);
+      return;
+    }
+
+    // Handle smooth scrolling for sections on home page
     const id = href.replace('#', '');
     if (id === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -204,11 +211,17 @@ export default function Footer({ dict }: FooterProps) {
             {dict.footer.copyright.replace('2025', currentYear.toString())}
           </p>
           <div className="flex justify-center gap-6 text-sm">
-            <button className="text-gray-400 hover:text-red-500 transition-colors">
+            <button
+              onClick={() => router.push('/privacy')}
+              className="text-gray-400 hover:text-red-500 transition-colors"
+            >
               {dict.footer.privacy}
             </button>
             <span className="text-gray-600">•</span>
-            <button className="text-gray-400 hover:text-red-500 transition-colors">
+            <button
+              onClick={() => router.push('/terms')}
+              className="text-gray-400 hover:text-red-500 transition-colors"
+            >
               {dict.footer.terms}
             </button>
           </div>

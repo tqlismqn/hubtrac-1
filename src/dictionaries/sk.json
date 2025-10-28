@@ -171,5 +171,177 @@
     "certificates": {
       "title": "Certifikáty a štandardy"
     }
+  },
+  "privacy": {
+    "title": "Ochrana osobných údajov",
+    "subtitle": "Vaše súkromie je pre nás prioritou. Prečítajte si, ako zhromažďujeme, používame a chránime vaše osobné údaje.",
+    "lastUpdated": "Posledná aktualizácia: 28. október 2025",
+    "sections": {
+      "overview": {
+        "title": "Prehľad",
+        "content": [
+          "HUBTRAC s.r.o. („my", „nás", „naša") je zodpovedný za spracovanie vašich osobných údajov v súlade s Nariadením Európskeho parlamentu a Rady (EÚ) 2016/679 (GDPR) a zákonom č. 18/2018 Z.z. o ochrane osobných údajov.",
+          "Táto politika ochrany osobných údajov vysvetľuje, aké údaje zbierame, ako ich používame, a aké práva máte vo vzťahu k vašim osobným údajom."
+        ]
+      },
+      "dataCollection": {
+        "title": "Aké údaje zbierame",
+        "content": "Pri využívaní našich služieb mobilného servisu pneumatík môžeme zbierať nasledujúce údaje:",
+        "items": [
+          "Identifikačné údaje: meno, priezvisko, titul",
+          "Kontaktné údaje: telefónne číslo, e-mailová adresa, poštová adresa",
+          "Údaje o vozidle: typ vozidla, registračné číslo, informácie o pneumatikách",
+          "Lokalizačné údaje: adresa miesta poskytnutia služby (s vaším súhlasom)",
+          "Obchodné údaje: história objednávok, faktúry, platobné informácie",
+          "Technické údaje: IP adresa, typ prehliadača, cookies (pri návšteve webových stránok)"
+        ]
+      },
+      "dataUse": {
+        "title": "Ako používame vaše údaje",
+        "content": "Vaše osobné údaje používame výhradne na nasledujúce účely:",
+        "items": [
+          "Poskytovanie mobilného servisu pneumatík a splnenie zmluvných záväzkov",
+          "Komunikácia s vami ohľadom vašich objednávok a služieb",
+          "Fakturácia a účtovné účely",
+          "Zlepšovanie kvality našich služieb",
+          "Zasielanie marketingových informácií (iba s vaším súhlasom)",
+          "Plnenie zákonných povinností (účtovníctvo, daňové evidencie)",
+          "Ochrana našich oprávnených záujmov a práv"
+        ]
+      },
+      "dataProtection": {
+        "title": "Ako chránime vaše údaje",
+        "content": [
+          "Implementujeme prísne technické a organizačné opatrenia na ochranu vašich osobných údajov pred neoprávneným prístupom, stratou, zničením alebo pozmenením.",
+          "Vaše údaje sú uložené na zabezpečených serveroch s šifrovaním. Prístup k osobným údajom majú iba oprávnení zamestnanci, ktorí tieto údaje potrebujú na plnenie svojich pracovných povinností.",
+          "Vaše údaje nepredávame ani neprenajímame tretím stranám na marketingové účely bez vášho výslovného súhlasu."
+        ]
+      },
+      "cookies": {
+        "title": "Cookies a sledovacie technológie",
+        "content": [
+          "Naša webová stránka používa cookies na zlepšenie vášho zážitku. Cookies sú malé textové súbory, ktoré sa ukladajú vo vašom zariadení.",
+          "Používame nasledujúce typy cookies:"
+        ],
+        "items": [
+          "Nevyhnutné cookies: potrebné pre základnú funkčnosť webovej stránky",
+          "Analytické cookies: pomáhajú nám pochopiť, ako návštevníci používajú našu stránku (napr. Google Analytics)",
+          "Funkčné cookies: umožňujú jazykové preferencie a prispôsobenie",
+          "Marketingové cookies: používané na cielenie reklamy (iba s vaším súhlasom)"
+        ]
+      },
+      "userRights": {
+        "title": "Vaše práva",
+        "content": "V súlade s GDPR máte nasledujúce práva:",
+        "items": [
+          "Právo na prístup k vašim osobným údajom",
+          "Právo na opravu nesprávnych alebo neúplných údajov",
+          "Právo na vymazanie údajov (\"právo byť zabudnutý\")",
+          "Právo na obmedzenie spracovania",
+          "Právo na prenosnosť údajov",
+          "Právo namietať proti spracovaniu",
+          "Právo odvolať súhlas so spracovaním údajov",
+          "Právo podať sťažnosť na Úrad na ochranu osobných údajov SR"
+        ]
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": [
+          "Ak máte akékoľvek otázky týkajúce sa tejto politiky ochrany osobných údajov alebo chcete uplatniť svoje práva, kontaktujte nás:",
+          "E-mail: ochrana.udajov@hubtrac-example.com",
+          "Telefón: +421 XXX XXX XXX",
+          "Adresa: [Adresa spoločnosti], Slovensko",
+          "Zodpovedná osoba: Zodpovedný pracovník pre ochranu osobných údajov"
+        ]
+      }
+    },
+    "questions": {
+      "title": "Máte otázky o ochrane údajov?",
+      "content": "Sme tu, aby sme vám pomohli s akýmikolmek otázkami týkajúcimi sa vašich osobných údajov."
+    }
+  },
+  "terms": {
+    "title": "Obchodné podmienky",
+    "subtitle": "Podmienky používania služieb mobilného servisu pneumatík HUBTRAC",
+    "lastUpdated": "Posledná aktualizácia: 28. október 2025",
+    "sections": {
+      "overview": {
+        "title": "Všeobecné ustanovenia",
+        "content": [
+          "Tieto obchodné podmienky upravujú práva a povinnosti medzi spoločnosťou HUBTRAC s.r.o., IČO: [IČO], so sídlom [Adresa] (ďalej len \"poskytovateľ\") a zákazníkom (ďalej len \"zákazník\") pri poskytovaní mobilného servisu pneumatík pre nákladné a komerčné vozidlá.",
+          "Uzavretím zmluvy alebo objednaním služby zákazník potvrdzuje, že sa oboznámil s týmito obchodnými podmienkami a súhlasí s nimi."
+        ]
+      },
+      "services": {
+        "title": "Rozsah služieb",
+        "content": "Poskytovateľ poskytuje nasledujúce služby:",
+        "items": [
+          "Mobilný servis pneumatík: výmena, montáž a demontáž pneumatík priamo na mieste zákazníka",
+          "Pohotovostná služba 24/7: nepretržitá dostupnosť v prípade poruchy alebo núdze",
+          "Oprava pneumatík: profesionálna oprava poškodených pneumatík",
+          "Predaj pneumatík: dodávka a predaj pneumatík značky HUBTRAC a ďalších značiek",
+          "Odborné poradenstvo: konzultácie týkajúce sa výberu správnych pneumatík",
+          "Pravidelná údržba: kontrola tlaku, opotrebenia, stavu dezénu"
+        ]
+      },
+      "pricing": {
+        "title": "Ceny a platobné podmienky",
+        "content": [
+          "Ceny služieb sú stanovené v aktuálnom cenníku poskytovateľa. Ceny zahŕňajú prácu, materiál a prípadný dojazd v dohodnutej oblasti. Príplatky za dojazd mimo štandardnej oblasti alebo za služby v nočných hodinách budú oznámené vopred.",
+          "Platba je splatná ihneď po poskytnutí služby alebo podľa dohodnutých platobných podmienok. Akceptujeme platby v hotovosti, platobnou kartou alebo bankovým prevodom.",
+          "Pri omeškáni platby si poskytovateľ vyhradzuje právo účtovať úrok z omeškania vo výške 0,05% denne z dlžnej sumy."
+        ]
+      },
+      "warranty": {
+        "title": "Záruka a reklamácie",
+        "content": [
+          "Na všetky pneumatiky značky HUBTRAC poskytujeme 6-ročnú záruku na výrobné chyby. Záruka sa nevzťahuje na mechanické poškodenie, nesprávne používanie alebo prirodzené opotrebenie.",
+          "Na poskytnuté služby (montáž, oprava) poskytujeme záruku 12 mesiacov.",
+          "Reklamácie je potrebné uplatniť písomne alebo elektronicky bez zbytočného odkladu po zistení vady. Poskytovateľ reklamáciu vyrieši do 30 dní od jej prijatia."
+        ]
+      },
+      "liability": {
+        "title": "Zodpovednosť a obmedzenie zodpovednosti",
+        "content": [
+          "Poskytovateľ zodpovedá za škody spôsobené vadným plnením služby v súlade s platnými právnymi predpismi Slovenskej republiky.",
+          "Poskytovateľ nezodpovedá za škody spôsobené nesprávnym používaním pneumatík zákazníkom, nesprávnou údržbou vozidla alebo okolnosťami mimo jeho kontroly (vyššia moc).",
+          "Zodpovednosť poskytovateľa je obmedzená na priame škody a nepresahuje celkovú hodnotu zaplatenej objednávky.",
+          "Zákazník je povinný zabezpečiť bezpečný prístup k vozidlu a poskytnúť potrebnú súčinnosť pri poskytovaní služby."
+        ]
+      },
+      "userObligations": {
+        "title": "Povinnosti zákazníka",
+        "content": "Zákazník sa zaväzuje:",
+        "items": [
+          "Poskytnúť správne a úplné informácie o vozidle a potrebných službách",
+          "Zabezpečiť bezpečný a prístupný priestor pre vykonanie servisu",
+          "Uhradiť dohodnutú cenu za služby v stanovenom termíne",
+          "Dodržiavať odporúčania poskytovateľa týkajúce sa údržby a používania pneumatík",
+          "Oznámiť zrušenie objednávky najmenej 24 hodín vopred (inak môže byť účtovaný storno poplatok)",
+          "Poskytnúť potrebnú dokumentáciu vozidla na vykonanie servisu"
+        ]
+      },
+      "disputes": {
+        "title": "Riešenie sporov",
+        "content": [
+          "Poskytovateľ sa zaväzuje riešiť prípadné spory so zákazníkom predovšetkým mimosúdnou cestou.",
+          "V prípade vzniku sporu sa zákazník môže obrátiť na Slovenskú obchodnú inšpekciu alebo využiť platformu alternatívneho riešenia sporov.",
+          "Spotrebiteľ má právo obrátiť sa na Slovenskú obchodnú inšpekciu, Inšpektorát SOI pre Bratislavský kraj, Bajkalská 21/A, 827 99 Bratislava, alebo na http://www.soi.sk.",
+          "Právne vzťahy neupravené týmito obchodnými podmienkami sa riadia príslušnými ustanoveniami Obchodného zákonníka a Občianskeho zákonníka SR."
+        ]
+      },
+      "changes": {
+        "title": "Zmeny podmienok",
+        "content": [
+          "Poskytovateľ si vyhradzuje právo meniť tieto obchodné podmienky. Zmeny nadobúdajú účinnosť dňom ich zverejnenia na webových stránkach.",
+          "O zmenách budú existujúci zákazníci informovaní e-mailom alebo iným vhodným spôsobom najmenej 14 dní pred nadobudnutím ich účinnosti.",
+          "Pokračovaním v používaní služieb po nadobudnutí účinnosti zmien zákazník vyjadruje súhlas s novými podmienkami."
+        ]
+      }
+    },
+    "questions": {
+      "title": "Máte otázky o obchodných podmienkach?",
+      "content": "Kontaktujte nás a radi vám všetko vysvetlíme."
+    }
   }
 }
