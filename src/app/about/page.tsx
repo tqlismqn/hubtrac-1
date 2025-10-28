@@ -6,6 +6,7 @@ import { Award, Target, Heart, TrendingUp, Shield, Users, Cpu, Clock } from 'luc
 import { getDictionary, Locale, defaultLocale } from '@/lib/i18n';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { CertificateGrid } from '@/components/CertificateModal';
 
 export default function AboutPage() {
   const [locale, setLocale] = useState<Locale>(defaultLocale);
@@ -31,6 +32,37 @@ export default function AboutPage() {
       icon: Heart,
       key: 'service',
       color: 'from-red-700 to-red-800',
+    },
+  ];
+
+  const certificates = [
+    {
+      id: 'ece',
+      name: 'ECE R54/R109 Certification',
+      description: 'European regulation compliance for commercial vehicle tyres',
+      pdfUrl: '/certificates/ece-certificate.pdf',
+      imageUrl: '/images/certificates/ece-preview.jpg',
+    },
+    {
+      id: 'dot',
+      name: 'DOT Certification',
+      description: 'US Department of Transportation certification for safety standards',
+      pdfUrl: '/certificates/dot-certificate.pdf',
+      imageUrl: '/images/certificates/dot-preview.jpg',
+    },
+    {
+      id: 'iso9001',
+      name: 'ISO 9001 Quality Management',
+      description: 'International standard for quality management systems',
+      pdfUrl: '/certificates/iso-9001-certificate.pdf',
+      imageUrl: '/images/certificates/iso9001-preview.jpg',
+    },
+    {
+      id: 'iso14001',
+      name: 'ISO 14001 Environmental Management',
+      description: 'International standard for environmental management systems',
+      pdfUrl: '/certificates/iso-14001-certificate.pdf',
+      imageUrl: '/images/certificates/iso14001-preview.jpg',
     },
   ];
 
@@ -188,34 +220,24 @@ export default function AboutPage() {
       </section>
 
       {/* Certificates section */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center"
+            className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-white mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
               {dict.about.certificates.title}
             </h2>
-
-            <div className="flex justify-center gap-8 flex-wrap">
-              {['ECE', 'DOT', 'ISO 9001', 'ISO 14001'].map((cert, index) => (
-                <motion.div
-                  key={cert}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.4 }}
-                  className="w-32 h-32 bg-white/10 backdrop-blur-sm border-2 border-white/20 rounded-2xl flex items-center justify-center hover:bg-white/20 transition-all duration-300"
-                >
-                  <span className="text-white font-bold text-xl">{cert}</span>
-                </motion.div>
-              ))}
-            </div>
+            <p className="text-lg text-gray-600">
+              Click on any certificate to view details and download PDF
+            </p>
           </motion.div>
+
+          <CertificateGrid certificates={certificates} />
         </div>
       </section>
 
