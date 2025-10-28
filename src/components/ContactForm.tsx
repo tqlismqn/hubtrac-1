@@ -2,8 +2,10 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { Send, Phone, Mail, MapPin, CheckCircle, AlertCircle, Check, X } from 'lucide-react';
+import { Send, Phone, Mail, MapPin, Check, X } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
+import { ContactFormSkeleton } from './SkeletonLoader';
+import { useToast } from './Toast';
 
 interface ContactFormProps {
   dict: Dictionary;
@@ -26,6 +28,8 @@ interface TouchedFields {
 }
 
 export default function ContactForm({ dict }: ContactFormProps) {
+  const { showToast } = useToast();
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -42,7 +46,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
     serviceType: false,
     message: false,
   });
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'submitting'>('idle');
 
   // Character limits
   const MESSAGE_MAX_LENGTH = 500;
@@ -133,20 +137,26 @@ export default function ContactForm({ dict }: ContactFormProps) {
     // Placeholder for form submission
     // In production, integrate with Formspree, EmailJS, or Web3Forms
     setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', phone: '', email: '', serviceType: '', message: '' });
-      setTouched({
-        name: false,
-        phone: false,
-        email: false,
-        serviceType: false,
-        message: false,
-      });
-      setErrors({});
+      // Simulate success (90% chance) or error (10% chance) for demo
+      const isSuccess = Math.random() > 0.1;
 
-      // Reset status after 5 seconds
-      setTimeout(() => setStatus('idle'), 5000);
-    }, 1500);
+      if (isSuccess) {
+        showToast(dict.contact.form.success, 'success', 6000);
+        setFormData({ name: '', phone: '', email: '', serviceType: '', message: '' });
+        setTouched({
+          name: false,
+          phone: false,
+          email: false,
+          serviceType: false,
+          message: false,
+        });
+        setErrors({});
+        setStatus('idle');
+      } else {
+        showToast(dict.contact.form.error, 'error', 8000);
+        setStatus('idle');
+      }
+    }, 2000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -274,7 +284,23 @@ export default function ContactForm({ dict }: ContactFormProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="relative"
           >
+            {/* Skeleton Overlay when submitting */}
+            <AnimatePresence>
+              {status === 'submitting' && (
+                <motion.div
+                  key="skeleton-overlay"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="absolute inset-0 z-10"
+                >
+                  <ContactFormSkeleton />
+                </motion.div>
+              )}
+            </AnimatePresence>
+
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>
@@ -561,34 +587,6 @@ export default function ContactForm({ dict }: ContactFormProps) {
                   </>
                 )}
               </button>
-
-              {/* Success message */}
-              {status === 'success' && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3"
-                >
-                  <CheckCircle className="w-5 h-5 text-green-600" />
-                  <p className="text-green-800 text-sm font-medium">
-                    {dict.contact.form.success}
-                  </p>
-                </motion.div>
-              )}
-
-              {/* Error message */}
-              {status === 'error' && (
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3"
-                >
-                  <AlertCircle className="w-5 h-5 text-red-600" />
-                  <p className="text-red-800 text-sm font-medium">
-                    {dict.contact.form.error}
-                  </p>
-                </motion.div>
-              )}
             </form>
           </motion.div>
         </div>

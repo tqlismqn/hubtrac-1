@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import CookieConsent from './CookieConsent';
 import { getDictionary, type Locale } from '@/lib/i18n';
 import type { Dictionary } from '@/lib/i18n';
+import { ToastProvider } from './Toast';
 
 export default function ClientProviders() {
   const [dict, setDict] = useState<Dictionary | null>(null);
@@ -35,8 +36,8 @@ export default function ClientProviders() {
   if (!dict) return null;
 
   return (
-    <>
+    <ToastProvider>
       <CookieConsent dict={dict} />
-    </>
+    </ToastProvider>
   );
 }

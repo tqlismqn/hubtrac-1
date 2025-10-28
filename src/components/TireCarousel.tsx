@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import { BLUR_DATA_URLS } from '@/lib/image-utils';
+import { ImageSkeleton } from './SkeletonLoader';
 
 interface TireImage {
   id: string;
@@ -24,6 +25,7 @@ export default function TireCarousel({ images, autoplay = false, autoplayDelay =
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'center' });
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -36,6 +38,10 @@ export default function TireCarousel({ images, autoplay = false, autoplayDelay =
   const scrollTo = useCallback((index: number) => {
     if (emblaApi) emblaApi.scrollTo(index);
   }, [emblaApi]);
+
+  const handleImageLoad = useCallback((imageId: string) => {
+    setLoadedImages(prev => new Set([...prev, imageId]));
+  }, []);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -87,29 +93,40 @@ export default function TireCarousel({ images, autoplay = false, autoplayDelay =
       {/* Main Carousel */}
       <div className="overflow-hidden rounded-2xl shadow-2xl" ref={emblaRef}>
         <div className="flex">
-          {images.map((image) => (
-            <div key={image.id} className="flex-[0_0_100%] min-w-0">
-              <div className="relative aspect-[16/9] bg-gradient-to-br from-gray-100 to-gray-200">
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-contain p-8"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-                  priority={selectedIndex === images.findIndex(img => img.id === image.id)}
-                  placeholder="blur"
-                  blurDataURL={BLUR_DATA_URLS.brandRed}
-                />
+          {images.map((image) => {
+            const isLoaded = loadedImages.has(image.id);
+            return (
+              <div key={image.id} className="flex-[0_0_100%] min-w-0">
+                <div className="relative aspect-[16/9] bg-gradient-to-br from-gray-100 to-gray-200">
+                  {!isLoaded && (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <ImageSkeleton height="100%" rounded={false} />
+                    </div>
+                  )}
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className={`object-contain p-8 transition-opacity duration-300 ${
+                      isLoaded ? 'opacity-100' : 'opacity-0'
+                    }`}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+                    priority={selectedIndex === images.findIndex(img => img.id === image.id)}
+                    placeholder="blur"
+                    blurDataURL={BLUR_DATA_URLS.brandRed}
+                    onLoad={() => handleImageLoad(image.id)}
+                  />
 
-                {/* Category Badge */}
-                {image.category && (
-                  <div className="absolute top-6 left-6 px-4 py-2 bg-red-600 text-white font-semibold rounded-full shadow-lg">
-                    {image.category}
-                  </div>
-                )}
+                  {/* Category Badge */}
+                  {image.category && (
+                    <div className="absolute top-6 left-6 px-4 py-2 bg-red-600 text-white font-semibold rounded-full shadow-lg">
+                      {image.category}
+                    </div>
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 
