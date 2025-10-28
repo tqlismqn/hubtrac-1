@@ -1,0 +1,175 @@
+{
+  "hero": {
+    "title": "Professional Mobile Tire Service for Commercial Vehicles",
+    "subtitle": "Your European partner for commercial vehicle tires - fast, reliable, professional",
+    "cta": "Contact Us",
+    "ctaSecondary": "Our Services"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive tire service for commercial vehicles directly at your location",
+    "items": {
+      "mobile": {
+        "title": "Mobile Service",
+        "description": "We come to you - tire changes and repairs directly on the road or at your facility"
+      },
+      "emergency": {
+        "title": "24/7 Emergency Service",
+        "description": "Always available for your urgent needs anytime and anywhere"
+      },
+      "consultation": {
+        "title": "Expert Consultation",
+        "description": "We help you choose the right tires for your vehicle and usage conditions"
+      },
+      "warranty": {
+        "title": "6-Year Warranty",
+        "description": "All our products come with comprehensive 6-year warranty"
+      }
+    }
+  },
+  "products": {
+    "title": "Tires for Every Need",
+    "subtitle": "Premium HUBTRAC tire quality for all types of commercial vehicles",
+    "categories": {
+      "highway_s23": {
+        "name": "HIGHWAY S23",
+        "description": "Highway steer axle solution - excellent handling and mileage"
+      },
+      "highway_t22": {
+        "name": "HIGHWAY T22",
+        "description": "Highway traction tire - optimized for rolling resistance and efficiency"
+      },
+      "mixed_s21": {
+        "name": "MIXED S21",
+        "description": "Universal all-weather tire - excellent grip on any surface"
+      },
+      "urban_g21": {
+        "name": "URBAN G21",
+        "description": "Urban drive tire - robust construction for local transport"
+      },
+      "coach_g21": {
+        "name": "COACH G21",
+        "description": "Premium coach tire - comfort and safety"
+      }
+    }
+  },
+  "stats": {
+    "experience": "49+ Years of Experience",
+    "partners": "800+ Partners Worldwide",
+    "factories": "9 Manufacturing Facilities"
+  },
+  "benefits": {
+    "title": "Why Choose HUBTRAC",
+    "warranty": {
+      "title": "6-Year Warranty",
+      "description": "Comprehensive protection of your investment"
+    },
+    "certificates": {
+      "title": "Certificates",
+      "description": "ECE, DOT, ISO certified products"
+    },
+    "technology": {
+      "title": "Advanced Technology",
+      "description": "State-of-the-art manufacturing processes and materials"
+    },
+    "support": {
+      "title": "24/7 Support",
+      "description": "Always ready to help whenever you need"
+    },
+    "response": {
+      "title": "Fast Response",
+      "description": "Short waiting times and flexible scheduling"
+    },
+    "team": {
+      "title": "Professional Team",
+      "description": "Technically trained technicians with years of experience"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Write to us and we will get back to you as soon as possible",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 XXX XXX XXXX",
+      "email": "Email",
+      "emailPlaceholder": "john.doe@example.com",
+      "serviceType": "Service Type",
+      "serviceTypePlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Please describe your needs...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Message sent successfully! We will contact you soon.",
+      "error": "An error occurred. Please try again."
+    },
+    "serviceTypes": {
+      "mobile": "Mobile Service",
+      "emergency": "Emergency Service",
+      "consultation": "Consultation",
+      "purchase": "Tire Purchase",
+      "other": "Other"
+    },
+    "info": {
+      "phone": "+1 XXX XXX XXXX",
+      "email": "info@hubtrac-example.com",
+      "address": "Address TBD"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "HUBTRAC",
+      "description": "Your trusted European partner for commercial vehicle tires"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "services": "Services",
+      "products": "Products",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "services": {
+      "title": "Services"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "social": {
+      "title": "Follow Us"
+    },
+    "copyright": "© 2025 HUBTRAC. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "title": "About HUBTRAC",
+    "subtitle": "Your trusted partner in mobile tire service",
+    "history": {
+      "title": "Our History",
+      "content": "With over 49 years of experience in the tire industry, HUBTRAC represents a European leader in commercial vehicle tire solutions. Our journey began with a simple mission: to provide premium products and unmatched service to our clients."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To provide top-tier mobile tire service that minimizes downtime and maximizes productivity for commercial vehicle fleets. We combine European quality with local expertise and flexibility."
+    },
+    "values": {
+      "title": "Our Values",
+      "quality": "Quality",
+      "reliability": "Reliability",
+      "innovation": "Innovation",
+      "service": "Service"
+    },
+    "certificates": {
+      "title": "Certificates and Standards"
+    }
+  }
+}

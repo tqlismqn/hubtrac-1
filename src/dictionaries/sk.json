@@ -1,0 +1,175 @@
+{
+  "hero": {
+    "title": "Profesionálny mobilný servis pneumatík pre nákladné vozidlá",
+    "subtitle": "Váš európsky partner pre pneumatiky komerčných vozidiel - rýchly, spoľahlivý, profesionálny",
+    "cta": "Kontaktujte nás",
+    "ctaSecondary": "Naše služby"
+  },
+  "nav": {
+    "home": "Domov",
+    "services": "Služby",
+    "products": "Produkty",
+    "about": "O nás",
+    "contact": "Kontakt"
+  },
+  "services": {
+    "title": "Naše služby",
+    "description": "Komplexný servis pneumatík pre nákladné vozidlá priamo na vašom mieste",
+    "items": {
+      "mobile": {
+        "title": "Mobilný servis",
+        "description": "Prichádzame k vám - výmena a oprava pneumatík priamo na ceste alebo vo vašom areáli"
+      },
+      "emergency": {
+        "title": "Pohotovostná služba 24/7",
+        "description": "Neustála dostupnosť pre vaše naliehavé potreby kdykoľvek a kdekoľvek"
+      },
+      "consultation": {
+        "title": "Odborné poradenstvo",
+        "description": "Pomôžeme vám vybrať správne pneumatiky pre vaše vozidlo a podmienky použitia"
+      },
+      "warranty": {
+        "title": "Záruka 6 rokov",
+        "description": "Všetky naše produkty majú komplexnú 6-ročnú záruku"
+      }
+    }
+  },
+  "products": {
+    "title": "Pneumatiky pre každú potrebu",
+    "subtitle": "Prémiová kvalita pneumatík HUBTRAC pre všetky typy komerčných vozidiel",
+    "categories": {
+      "highway_s23": {
+        "name": "HIGHWAY S23",
+        "description": "Riešenie na diaľnicu pre riadiacu nápravu - vynikajúca ovládateľnosť a životnosť"
+      },
+      "highway_t22": {
+        "name": "HIGHWAY T22",
+        "description": "Traktorová pneumatika na diaľnicu - optimalizovaná pre jazdný odpor a účinnosť"
+      },
+      "mixed_s21": {
+        "name": "MIXED S21",
+        "description": "Univerzálna pneumatika na zmiešané použitie - vynikajúci záber na každom povrchu"
+      },
+      "urban_g21": {
+        "name": "URBAN G21",
+        "description": "Mestská hnacia pneumatika - robustná konštrukcia pre miestnu dopravu"
+      },
+      "coach_g21": {
+        "name": "COACH G21",
+        "description": "Prémiová pneumatika pre autobusy a autokaře - komfort a bezpečnosť"
+      }
+    }
+  },
+  "stats": {
+    "experience": "Viac ako 49 rokov skúseností",
+    "partners": "800+ partnerov po celom svete",
+    "factories": "9 výrobných závodov"
+  },
+  "benefits": {
+    "title": "Prečo si vybrať HUBTRAC",
+    "warranty": {
+      "title": "6 rokov záruky",
+      "description": "Komplexná ochrana vašej investície"
+    },
+    "certificates": {
+      "title": "Certifikáty",
+      "description": "ECE, DOT, ISO certifikované produkty"
+    },
+    "technology": {
+      "title": "Pokročilá technológia",
+      "description": "Najmodernejšie výrobné procesy a materiály"
+    },
+    "support": {
+      "title": "Podpora 24/7",
+      "description": "Vždy pripravení pomôcť, kedykoľvek potrebujete"
+    },
+    "response": {
+      "title": "Rýchla reakcia",
+      "description": "Krátke čakacie doby a flexibilné časové rozvrhy"
+    },
+    "team": {
+      "title": "Profesionálny tím",
+      "description": "Odborne vyškolení technici s mnohými rokmi skúseností"
+    }
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "subtitle": "Napíšte nám a my sa vám ozveme čo najskôr",
+    "form": {
+      "name": "Meno a priezvisko",
+      "namePlaceholder": "Ján Novák",
+      "phone": "Telefón",
+      "phonePlaceholder": "+421 XXX XXX XXX",
+      "email": "E-mail",
+      "emailPlaceholder": "jan.novak@example.com",
+      "serviceType": "Typ služby",
+      "serviceTypePlaceholder": "Vyberte službu",
+      "message": "Správa",
+      "messagePlaceholder": "Prosím, popíšte vašu potrebu...",
+      "submit": "Odoslať správu",
+      "submitting": "Odosielam...",
+      "success": "Správa úspešne odoslaná! Ozveme sa vám čoskoro.",
+      "error": "Nastala chyba. Skúste to prosím znovu."
+    },
+    "serviceTypes": {
+      "mobile": "Mobilný servis",
+      "emergency": "Pohotovostná služba",
+      "consultation": "Konzultácia",
+      "purchase": "Nákup pneumatík",
+      "other": "Iné"
+    },
+    "info": {
+      "phone": "+421 XXX XXX XXX",
+      "email": "info@hubtrac-example.com",
+      "address": "Adresa TBD, Slovensko"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "HUBTRAC",
+      "description": "Váš dôveryhodný európsky partner pre pneumatiky komerčných vozidiel"
+    },
+    "quickLinks": {
+      "title": "Rýchle odkazy",
+      "home": "Domov",
+      "services": "Služby",
+      "products": "Produkty",
+      "about": "O nás",
+      "contact": "Kontakt"
+    },
+    "services": {
+      "title": "Služby"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "social": {
+      "title": "Sledujte nás"
+    },
+    "copyright": "© 2025 HUBTRAC. Všetky práva vyhradené.",
+    "privacy": "Ochrana súkromia",
+    "terms": "Podmienky používania"
+  },
+  "about": {
+    "title": "O spoločnosti HUBTRAC",
+    "subtitle": "Váš dôveryhodný partner v mobilnom servise pneumatík",
+    "history": {
+      "title": "Naša história",
+      "content": "S viac ako 49 rokmi skúseností v pneumatikovom priemysle predstavuje HUBTRAC európskeho lídra v riešeniach pneumatík pre komerčné vozidlá. Naša cesta začala s jednoduchým poslaním: poskytovať prémiové produkty a bezkonkurenčný servis našim klientom."
+    },
+    "mission": {
+      "title": "Naše poslanie",
+      "content": "Poskytovať špičkový mobilný servis pneumatík, ktorý minimalizuje prestoje a maximalizuje produktivitu flotíl komerčných vozidiel. Kombinujeme európsku kvalitu s miestnou odbornosťou a flexibilitou."
+    },
+    "values": {
+      "title": "Naše hodnoty",
+      "quality": "Kvalita",
+      "reliability": "Spoľahlivosť",
+      "innovation": "Inovácia",
+      "service": "Servis"
+    },
+    "certificates": {
+      "title": "Certifikáty a štandardy"
+    }
+  }
+}

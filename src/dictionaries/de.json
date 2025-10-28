@@ -1,0 +1,175 @@
+{
+  "hero": {
+    "title": "Professioneller mobiler Reifenservice für Nutzfahrzeuge",
+    "subtitle": "Ihr europäischer Partner für Nutzfahrzeugreifen - schnell, zuverlässig, professionell",
+    "cta": "Kontakt aufnehmen",
+    "ctaSecondary": "Unsere Dienstleistungen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "description": "Umfassender Reifenservice für Nutzfahrzeuge direkt an Ihrem Standort",
+    "items": {
+      "mobile": {
+        "title": "Mobiler Service",
+        "description": "Wir kommen zu Ihnen - Reifenwechsel und Reparatur direkt unterwegs oder in Ihrem Betrieb"
+      },
+      "emergency": {
+        "title": "24/7 Notdienst",
+        "description": "Rund um die Uhr verfügbar für Ihre dringenden Bedürfnisse, jederzeit und überall"
+      },
+      "consultation": {
+        "title": "Fachberatung",
+        "description": "Wir helfen Ihnen, die richtigen Reifen für Ihr Fahrzeug und Ihre Einsatzbedingungen zu wählen"
+      },
+      "warranty": {
+        "title": "6 Jahre Garantie",
+        "description": "Alle unsere Produkte haben eine umfassende 6-Jahres-Garantie"
+      }
+    }
+  },
+  "products": {
+    "title": "Reifen für jeden Bedarf",
+    "subtitle": "Premium HUBTRAC Reifenqualität für alle Arten von Nutzfahrzeugen",
+    "categories": {
+      "highway_s23": {
+        "name": "HIGHWAY S23",
+        "description": "Autobahn-Lenkachsen-Lösung - hervorragende Lenkbarkeit und Laufleistung"
+      },
+      "highway_t22": {
+        "name": "HIGHWAY T22",
+        "description": "Autobahn-Traktionsreifen - optimiert für Rollwiderstand und Effizienz"
+      },
+      "mixed_s21": {
+        "name": "MIXED S21",
+        "description": "Universeller Allwetterreifen - hervorragender Grip auf jedem Untergrund"
+      },
+      "urban_g21": {
+        "name": "URBAN G21",
+        "description": "Städtischer Antriebsreifen - robuste Konstruktion für den Nahverkehr"
+      },
+      "coach_g21": {
+        "name": "COACH G21",
+        "description": "Premium-Busreifen - Komfort und Sicherheit"
+      }
+    }
+  },
+  "stats": {
+    "experience": "Über 49 Jahre Erfahrung",
+    "partners": "800+ Partner weltweit",
+    "factories": "9 Produktionsstätten"
+  },
+  "benefits": {
+    "title": "Warum HUBTRAC wählen",
+    "warranty": {
+      "title": "6 Jahre Garantie",
+      "description": "Umfassender Schutz Ihrer Investition"
+    },
+    "certificates": {
+      "title": "Zertifikate",
+      "description": "ECE, DOT, ISO zertifizierte Produkte"
+    },
+    "technology": {
+      "title": "Fortschrittliche Technologie",
+      "description": "Modernste Fertigungsverfahren und Materialien"
+    },
+    "support": {
+      "title": "24/7 Unterstützung",
+      "description": "Immer bereit zu helfen, wann immer Sie es brauchen"
+    },
+    "response": {
+      "title": "Schnelle Reaktion",
+      "description": "Kurze Wartezeiten und flexible Terminplanung"
+    },
+    "team": {
+      "title": "Professionelles Team",
+      "description": "Fachlich geschulte Techniker mit langjähriger Erfahrung"
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Schreiben Sie uns und wir melden uns so schnell wie möglich bei Ihnen",
+    "form": {
+      "name": "Vor- und Nachname",
+      "namePlaceholder": "Max Mustermann",
+      "phone": "Telefon",
+      "phonePlaceholder": "+49 XXX XXX XXX",
+      "email": "E-Mail",
+      "emailPlaceholder": "max.mustermann@example.com",
+      "serviceType": "Art der Dienstleistung",
+      "serviceTypePlaceholder": "Wählen Sie eine Dienstleistung",
+      "message": "Nachricht",
+      "messagePlaceholder": "Bitte beschreiben Sie Ihren Bedarf...",
+      "submit": "Nachricht senden",
+      "submitting": "Wird gesendet...",
+      "success": "Nachricht erfolgreich gesendet! Wir melden uns bald bei Ihnen.",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "serviceTypes": {
+      "mobile": "Mobiler Service",
+      "emergency": "Notdienst",
+      "consultation": "Beratung",
+      "purchase": "Reifenkauf",
+      "other": "Sonstiges"
+    },
+    "info": {
+      "phone": "+49 XXX XXX XXX",
+      "email": "info@hubtrac-example.com",
+      "address": "Adresse TBD, Deutschland"
+    }
+  },
+  "footer": {
+    "company": {
+      "title": "HUBTRAC",
+      "description": "Ihr vertrauenswürdiger europäischer Partner für Nutzfahrzeugreifen"
+    },
+    "quickLinks": {
+      "title": "Schnelllinks",
+      "home": "Startseite",
+      "services": "Dienstleistungen",
+      "products": "Produkte",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "services": {
+      "title": "Dienstleistungen"
+    },
+    "contact": {
+      "title": "Kontakt"
+    },
+    "social": {
+      "title": "Folgen Sie uns"
+    },
+    "copyright": "© 2025 HUBTRAC. Alle Rechte vorbehalten.",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen"
+  },
+  "about": {
+    "title": "Über HUBTRAC",
+    "subtitle": "Ihr vertrauenswürdiger Partner im mobilen Reifenservice",
+    "history": {
+      "title": "Unsere Geschichte",
+      "content": "Mit über 49 Jahren Erfahrung in der Reifenindustrie ist HUBTRAC ein europäischer Marktführer für Nutzfahrzeugreifen-Lösungen. Unsere Reise begann mit einer einfachen Mission: Premium-Produkte und unübertroffenen Service für unsere Kunden zu bieten."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "content": "Erstklassigen mobilen Reifenservice zu bieten, der Ausfallzeiten minimiert und die Produktivität von Nutzfahrzeugflotten maximiert. Wir kombinieren europäische Qualität mit lokaler Expertise und Flexibilität."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "quality": "Qualität",
+      "reliability": "Zuverlässigkeit",
+      "innovation": "Innovation",
+      "service": "Service"
+    },
+    "certificates": {
+      "title": "Zertifikate und Standards"
+    }
+  }
+}
