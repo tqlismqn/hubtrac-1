@@ -23,7 +23,7 @@ export default function Hero({ dict }: HeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
       {/* Background pattern overlay */}
       <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
 
