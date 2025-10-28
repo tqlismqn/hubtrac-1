@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Dictionary } from '@/lib/i18n';
 
 interface ProductGalleryProps {
@@ -11,26 +12,31 @@ export default function ProductGallery({ dict }: ProductGalleryProps) {
   const products = [
     {
       key: 'highway_s23',
+      image: '/images/products/highway-s23.webp',
       gradient: 'from-red-600 to-red-700',
       bgPattern: 'radial-gradient(circle at 30% 50%, rgba(220, 38, 38, 0.3) 0%, transparent 50%)',
     },
     {
       key: 'highway_t22',
+      image: '/images/products/highway-t22.webp',
       gradient: 'from-red-700 to-red-800',
       bgPattern: 'radial-gradient(circle at 70% 50%, rgba(185, 28, 28, 0.3) 0%, transparent 50%)',
     },
     {
       key: 'mixed_s21',
+      image: '/images/products/mixed-s21.webp',
       gradient: 'from-red-600 to-orange-600',
       bgPattern: 'radial-gradient(circle at 50% 30%, rgba(220, 38, 38, 0.3) 0%, transparent 50%)',
     },
     {
       key: 'urban_g21',
+      image: '/images/products/urban-g21.webp',
       gradient: 'from-orange-600 to-red-600',
       bgPattern: 'radial-gradient(circle at 50% 70%, rgba(234, 88, 12, 0.3) 0%, transparent 50%)',
     },
     {
       key: 'coach_g21',
+      image: '/images/products/coach-g21.webp',
       gradient: 'from-red-800 to-red-900',
       bgPattern: 'radial-gradient(circle at 50% 50%, rgba(153, 27, 27, 0.3) 0%, transparent 50%)',
     },
@@ -84,31 +90,22 @@ export default function ProductGallery({ dict }: ProductGalleryProps) {
                 />
 
                 {/* Content */}
-                <div className="relative z-10 p-8 h-full flex flex-col justify-between min-h-[320px]">
-                  {/* Tire icon placeholder - will be replaced with actual images */}
+                <div className="relative z-10 p-8 h-full flex flex-col justify-between min-h-[380px]">
+                  {/* Product image */}
                   <motion.div
-                    className="mb-6"
-                    whileHover={{ rotate: 45 }}
+                    className="mb-6 flex-1 flex items-center justify-center"
+                    whileHover={{ scale: 1.05 }}
                     transition={{ type: 'spring', stiffness: 300 }}
                   >
-                    <div className="w-32 h-32 mx-auto">
-                      {/* Tire ring representation */}
-                      <div className="relative w-full h-full">
-                        <div className="absolute inset-0 border-8 border-white/30 rounded-full" />
-                        <div className="absolute inset-4 border-4 border-white/50 rounded-full" />
-                        <div className="absolute inset-8 border-2 border-white/70 rounded-full" />
-
-                        {/* Tire treads */}
-                        {[...Array(8)].map((_, i) => (
-                          <div
-                            key={i}
-                            className="absolute top-1/2 left-1/2 w-0.5 h-12 bg-white/40"
-                            style={{
-                              transform: `translate(-50%, -50%) rotate(${i * 45}deg)`,
-                            }}
-                          />
-                        ))}
-                      </div>
+                    <div className="relative w-48 h-48">
+                      <Image
+                        src={product.image}
+                        alt={productData.name}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-contain drop-shadow-2xl"
+                        loading="lazy"
+                      />
                     </div>
                   </motion.div>
 
