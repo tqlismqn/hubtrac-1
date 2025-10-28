@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Truck } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
-import { animations } from '@/styles/design-system';
+import { animations, microinteractions } from '@/styles/design-system';
 
 interface HeroProps {
   dict: Dictionary;
@@ -81,20 +81,24 @@ export default function Hero({ dict }: HeroProps) {
             transition={{ delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <button
+            <motion.button
               onClick={scrollToContact}
-              className="group px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-red-600/50 hover:scale-105"
+              {...microinteractions.buttonTap}
+              className="group px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-red-600/50"
             >
               {dict.hero.cta}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+              <motion.div {...microinteractions.iconBounce}>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </motion.div>
+            </motion.button>
 
-            <button
+            <motion.button
               onClick={scrollToServices}
+              {...microinteractions.buttonTap}
               className="px-8 py-4 bg-transparent border-2 border-white/30 hover:border-white text-white font-semibold rounded-full transition-all duration-300 hover:bg-white/10"
             >
               {dict.hero.ctaSecondary}
-            </button>
+            </motion.button>
           </motion.div>
         </div>
       </div>

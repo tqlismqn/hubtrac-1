@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { Shield, Award, Cpu, HeadphonesIcon, Clock, Users } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
+import { microinteractions } from '@/styles/design-system';
 
 interface BenefitsGridProps {
   dict: Dictionary;
@@ -88,6 +89,7 @@ export default function BenefitsGrid({ dict }: BenefitsGridProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
+                {...microinteractions.cardHover}
                 className="group"
               >
                 <div className="relative h-full p-8 bg-gray-50 rounded-2xl border-2 border-gray-100 hover:border-red-200 transition-all duration-300 hover:shadow-xl">
@@ -97,9 +99,12 @@ export default function BenefitsGrid({ dict }: BenefitsGridProps) {
                   <div className="relative z-10">
                     {/* Icon */}
                     <div className="mb-6">
-                      <div className={`w-16 h-16 ${benefit.iconBg} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                      <motion.div
+                        {...microinteractions.scaleOnHover}
+                        className={`w-16 h-16 ${benefit.iconBg} rounded-xl flex items-center justify-center`}
+                      >
                         <Icon className={`w-8 h-8 ${benefit.iconColor}`} strokeWidth={1.5} />
-                      </div>
+                      </motion.div>
                     </div>
 
                     {/* Content */}
