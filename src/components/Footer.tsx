@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Facebook, Linkedin, Instagram } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
@@ -10,12 +11,13 @@ interface FooterProps {
 
 export default function Footer({ dict }: FooterProps) {
   const currentYear = new Date().getFullYear();
+  const router = useRouter();
 
   const quickLinks = [
     { label: dict.footer.quickLinks.home, href: '#home' },
     { label: dict.footer.quickLinks.services, href: '#services' },
     { label: dict.footer.quickLinks.products, href: '#products' },
-    { label: dict.footer.quickLinks.about, href: '#about' },
+    { label: dict.footer.quickLinks.about, href: '/about' },
     { label: dict.footer.quickLinks.contact, href: '#contact' },
   ];
 
@@ -26,6 +28,13 @@ export default function Footer({ dict }: FooterProps) {
   ];
 
   const scrollToSection = (href: string) => {
+    // Handle routing for /about page
+    if (href === '/about') {
+      router.push('/about');
+      return;
+    }
+
+    // Handle smooth scrolling for sections
     const id = href.replace('#', '');
     if (id === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });

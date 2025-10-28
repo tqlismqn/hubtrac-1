@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Dictionary, Locale } from '@/lib/i18n';
@@ -15,6 +16,7 @@ interface NavigationProps {
 export default function Navigation({ dict, currentLocale, onLocaleChange }: NavigationProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,11 +31,19 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
     { label: dict.nav.home, href: '#home' },
     { label: dict.nav.services, href: '#services' },
     { label: dict.nav.products, href: '#products' },
-    { label: dict.nav.about, href: '#about' },
+    { label: dict.nav.about, href: '/about' },
     { label: dict.nav.contact, href: '#contact' },
   ];
 
   const scrollToSection = (href: string) => {
+    // Handle routing for /about page
+    if (href === '/about') {
+      router.push('/about');
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
+    // Handle smooth scrolling for sections
     const id = href.replace('#', '');
     if (id === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -87,31 +97,10 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
 
             {/* Language switcher & mobile menu button */}
             <div className="flex items-center gap-4">
-              <div className={`transition-opacity duration-300 ${
-                isScrolled ? 'hidden' : 'block'
-              }`}>
-                <LanguageSwitcher
-                  currentLocale={currentLocale}
-                  onLocaleChange={onLocaleChange}
-                />
-              </div>
-
-              {/* Desktop language switcher (visible when scrolled) */}
-              <div className={`hidden md:block transition-opacity duration-300 ${
-                isScrolled ? 'block' : 'hidden'
-              }`}>
-                <div className="relative">
-                  <select
-                    value={currentLocale}
-                    onChange={(e) => onLocaleChange(e.target.value as Locale)}
-                    className="px-4 py-2 bg-gray-100 border border-gray-300 rounded-full font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600 cursor-pointer uppercase"
-                  >
-                    <option value="sk">SK</option>
-                    <option value="de">DE</option>
-                    <option value="en">EN</option>
-                  </select>
-                </div>
-              </div>
+              <LanguageSwitcher
+                currentLocale={currentLocale}
+                onLocaleChange={onLocaleChange}
+              />
 
               {/* Mobile menu button */}
               <button
