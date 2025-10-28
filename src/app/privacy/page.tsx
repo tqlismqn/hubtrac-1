@@ -116,7 +116,7 @@ export default function PrivacyPage() {
                         <p>{sectionData.content}</p>
                       )}
 
-                      {sectionData.items && (
+                      {'items' in sectionData && sectionData.items && (
                         <ul className="list-disc list-inside space-y-2 ml-4">
                           {sectionData.items.map((item: string, idx: number) => (
                             <li key={idx}>{item}</li>
