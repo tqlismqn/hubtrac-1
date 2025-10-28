@@ -5,6 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
+import { BLUR_DATA_URLS } from '@/lib/image-utils';
 
 interface TireImage {
   id: string;
@@ -96,6 +97,8 @@ export default function TireCarousel({ images, autoplay = false, autoplayDelay =
                   className="object-contain p-8"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
                   priority={selectedIndex === images.findIndex(img => img.id === image.id)}
+                  placeholder="blur"
+                  blurDataURL={BLUR_DATA_URLS.brandRed}
                 />
 
                 {/* Category Badge */}
@@ -159,6 +162,8 @@ export default function TireCarousel({ images, autoplay = false, autoplayDelay =
                 fill
                 className="object-cover"
                 sizes="80px"
+                placeholder="blur"
+                blurDataURL={BLUR_DATA_URLS.gray}
               />
             </button>
           ))}
@@ -261,6 +266,8 @@ export function TireCarouselLightbox({ images, initialIndex = 0, onClose }: Tire
                       className="object-contain"
                       sizes="90vw"
                       priority
+                      placeholder="blur"
+                      blurDataURL={BLUR_DATA_URLS.dark}
                     />
                   </div>
                   <p className="text-center text-white text-lg mt-4">{image.alt}</p>

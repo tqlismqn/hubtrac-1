@@ -343,5 +343,21 @@
       "title": "Questions about Terms of Service?",
       "content": "Contact us and we'll be happy to explain everything."
     }
+  },
+  "cookies": {
+    "title": "Cookie Settings",
+    "subtitle": "We respect your privacy",
+    "description": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+    "acceptAll": "Accept All",
+    "necessaryOnly": "Necessary Only",
+    "savePreferences": "Save Preferences",
+    "customizeSettings": "Customize Settings",
+    "privacyPolicy": "Read our Privacy Policy",
+    "necessary": "Necessary Cookies",
+    "necessaryDesc": "Essential for the website to function properly. Cannot be disabled.",
+    "analytics": "Analytics Cookies",
+    "analyticsDesc": "Help us understand how visitors interact with our website.",
+    "marketing": "Marketing Cookies",
+    "marketingDesc": "Used to deliver personalized advertisements."
   }
 }

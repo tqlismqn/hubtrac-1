@@ -343,5 +343,21 @@
       "title": "Fragen zu den AGB?",
       "content": "Kontaktieren Sie uns und wir erklären Ihnen gerne alles."
     }
+  },
+  "cookies": {
+    "title": "Cookie-Einstellungen",
+    "subtitle": "Wir respektieren Ihre Privatsphäre",
+    "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Datenverkehr zu analysieren. Durch Klicken auf 'Alle akzeptieren' stimmen Sie unserer Verwendung von Cookies zu.",
+    "acceptAll": "Alle akzeptieren",
+    "necessaryOnly": "Nur notwendige",
+    "savePreferences": "Einstellungen speichern",
+    "customizeSettings": "Einstellungen anpassen",
+    "privacyPolicy": "Lesen Sie unsere Datenschutzrichtlinie",
+    "necessary": "Notwendige Cookies",
+    "necessaryDesc": "Erforderlich für das ordnungsgemäße Funktionieren der Website. Können nicht deaktiviert werden.",
+    "analytics": "Analyse-Cookies",
+    "analyticsDesc": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren.",
+    "marketing": "Marketing-Cookies",
+    "marketingDesc": "Werden verwendet, um personalisierte Werbung bereitzustellen."
   }
 }

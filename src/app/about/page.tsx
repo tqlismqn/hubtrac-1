@@ -6,7 +6,20 @@ import { Award, Target, Heart, TrendingUp, Shield, Users, Cpu, Clock } from 'luc
 import { getDictionary, Locale, defaultLocale } from '@/lib/i18n';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { CertificateGrid } from '@/components/CertificateModal';
+import dynamic from 'next/dynamic';
+
+// Lazy load CertificateGrid for better performance (code splitting)
+const CertificateGrid = dynamic(
+  () => import('@/components/CertificateModal').then(mod => ({ default: mod.CertificateGrid })),
+  {
+    loading: () => (
+      <div className="flex justify-center items-center py-12">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
+      </div>
+    ),
+    ssr: false,
+  }
+);
 
 export default function AboutPage() {
   const [locale, setLocale] = useState<Locale>(defaultLocale);

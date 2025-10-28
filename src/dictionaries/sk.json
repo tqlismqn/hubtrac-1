@@ -343,5 +343,21 @@
       "title": "Máte otázky o obchodných podmienkach?",
       "content": "Kontaktujte nás a radi vám všetko vysvetlíme."
     }
+  },
+  "cookies": {
+    "title": "Nastavenia súborov cookie",
+    "subtitle": "Rešpektujeme vaše súkromie",
+    "description": "Používame súbory cookie na zlepšenie vášho zážitku z prehliadania, poskytovanie personalizovaného obsahu a analýzu návštevnosti. Kliknutím na 'Prijať všetko' súhlasíte s našim používaním súborov cookie.",
+    "acceptAll": "Prijať všetko",
+    "necessaryOnly": "Len nevyhnutné",
+    "savePreferences": "Uložiť preferencie",
+    "customizeSettings": "Prispôsobiť nastavenia",
+    "privacyPolicy": "Prečítajte si našu politiku ochrany osobných údajov",
+    "necessary": "Nevyhnutné súbory cookie",
+    "necessaryDesc": "Nevyhnutné pre správne fungovanie webových stránok. Nie je možné ich vypnúť.",
+    "analytics": "Analytické súbory cookie",
+    "analyticsDesc": "Pomáhajú nám pochopiť, ako návštevníci interagujú s našimi webovými stránkami.",
+    "marketing": "Marketingové súbory cookie",
+    "marketingDesc": "Používajú sa na zobrazovanie personalizovanej reklamy."
   }
 }

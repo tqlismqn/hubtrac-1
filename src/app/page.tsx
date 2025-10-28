@@ -8,8 +8,18 @@ import TrustIndicators from '@/components/TrustIndicators';
 import Services from '@/components/Services';
 import ProductGallery from '@/components/ProductGallery';
 import BenefitsGrid from '@/components/BenefitsGrid';
-import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import dynamic from 'next/dynamic';
+
+// Lazy load ContactForm for better performance (code splitting)
+const ContactForm = dynamic(() => import('@/components/ContactForm'), {
+  loading: () => (
+    <div className="flex justify-center items-center py-20">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
+    </div>
+  ),
+  ssr: false,
+});
 
 export default function Home() {
   const [locale, setLocale] = useState<Locale>(defaultLocale);
