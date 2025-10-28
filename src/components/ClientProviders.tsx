@@ -1,12 +1,16 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, ReactNode } from 'react';
 import CookieConsent from './CookieConsent';
 import { getDictionary, type Locale } from '@/lib/i18n';
 import type { Dictionary } from '@/lib/i18n';
 import { ToastProvider } from './Toast';
 
-export default function ClientProviders() {
+interface ClientProvidersProps {
+  children: ReactNode;
+}
+
+export default function ClientProviders({ children }: ClientProvidersProps) {
   const [dict, setDict] = useState<Dictionary | null>(null);
   const [locale, setLocale] = useState<Locale>('sk');
 
@@ -38,6 +42,7 @@ export default function ClientProviders() {
   return (
     <ToastProvider>
       <CookieConsent dict={dict} />
+      {children}
     </ToastProvider>
   );
 }
