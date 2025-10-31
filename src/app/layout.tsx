@@ -17,17 +17,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hubtrac-mobile-service.vercel.app'), // Update with actual domain
+  metadataBase: new URL('https://truckhub-mobile-service.vercel.app'), // Update with actual domain
   title: {
-    default: 'HUBTRAC Mobile Tire Service | Professional Truck Tire Solutions',
-    template: '%s | HUBTRAC Mobile Service'
+    default: 'Truck Hub Mobile Tire Service | Professional Truck Tire Solutions',
+    template: '%s | Truck Hub Mobile Service'
   },
-  description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners across 9 factories. HUBTRAC certified tires with 6-year warranty. Service in Slovakia, Germany, and Austria.',
+  description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners across 9 factories. Truck Hub certified tires with 6-year warranty. Service in Slovakia, Germany, and Austria.',
   keywords: [
     'mobile tire service',
     'truck tires',
     'commercial vehicle tires',
-    'HUBTRAC',
+    'Truck Hub',
     'tire replacement',
     'emergency tire service',
     'LKW Reifen',
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     'heavy duty tires',
     'fleet tire service'
   ],
-  authors: [{ name: 'HUBTRAC Europe' }],
-  creator: 'HUBTRAC Europe',
-  publisher: 'HUBTRAC Europe',
+  authors: [{ name: 'Truck Hub Europe' }],
+  creator: 'Truck Hub Europe',
+  publisher: 'Truck Hub Europe',
   formatDetection: {
     email: false,
     address: false,
