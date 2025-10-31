@@ -1,13 +1,9 @@
 {
   "hero": {
-    "trustSignature": "Trusted Service Provider",
-    "title": "EMERGENCY SERVICE 24/7 NON-STOP",
-    "subtitle": "Mobile tire replacement directly at your location",
-    "emergency24_7": "24/7 Emergency",
+    "title": "Professional Mobile Tire Service for Commercial Vehicles",
+    "subtitle": "Your European partner for commercial vehicle tires - fast, reliable, professional",
     "cta": "Contact Us",
-    "ctaPrimary": "Call Now",
-    "ctaSecondary": "Browse Tire Catalog",
-    "contactVia": "Contact us via"
+    "ctaSecondary": "Our Services"
   },
   "nav": {
     "home": "Home",
@@ -40,7 +36,7 @@
   },
   "products": {
     "title": "Tires for Every Need",
-    "subtitle": "Premium Truck Hub tire quality for all types of commercial vehicles",
+    "subtitle": "Premium TruckHub tire quality for all types of commercial vehicles",
     "categories": {
       "highway_s23": {
         "name": "HIGHWAY S23",
@@ -70,7 +66,7 @@
     "factories": "9 Manufacturing Facilities"
   },
   "benefits": {
-    "title": "Why Choose Truck Hub",
+    "title": "Why Choose TruckHub",
     "warranty": {
       "title": "6-Year Warranty",
       "description": "Comprehensive protection of your investment"
@@ -130,7 +126,7 @@
   },
   "footer": {
     "company": {
-      "title": "Truck Hub",
+      "title": "TruckHub",
       "description": "Your trusted European partner for commercial vehicle tires"
     },
     "quickLinks": {
@@ -150,16 +146,16 @@
     "social": {
       "title": "Follow Us"
     },
-    "copyright": "© 2025 Truck Hub. All rights reserved.",
+    "copyright": "© 2025 TruckHub. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
   "about": {
-    "title": "About Truck Hub",
+    "title": "About TruckHub",
     "subtitle": "Your trusted partner in mobile tire service",
     "history": {
       "title": "Our History",
-      "content": "With over 49 years of experience in the tire industry, Truck Hub represents a European leader in commercial vehicle tire solutions. Our journey began with a simple mission: to provide premium products and unmatched service to our clients."
+      "content": "With over 49 years of experience in the tire industry, TruckHub represents a European leader in commercial vehicle tire solutions. Our journey began with a simple mission: to provide premium products and unmatched service to our clients."
     },
     "mission": {
       "title": "Our Mission",
@@ -184,7 +180,7 @@
       "overview": {
         "title": "Overview",
         "content": [
-          "Truck Hub Ltd. (\"we\", \"us\", \"our\") is responsible for processing your personal data in accordance with the European Union's General Data Protection Regulation (GDPR) (EU 2016/679) and applicable national data protection laws.",
+          "TruckHub Ltd. (\"we\", \"us\", \"our\") is responsible for processing your personal data in accordance with the European Union's General Data Protection Regulation (GDPR) (EU 2016/679) and applicable national data protection laws.",
           "This privacy policy explains what data we collect, how we use it, and what rights you have regarding your personal data."
         ]
       },
@@ -266,13 +262,13 @@
   },
   "terms": {
     "title": "Terms of Service",
-    "subtitle": "Terms and conditions for Truck Hub mobile tire service",
+    "subtitle": "Terms and conditions for TruckHub mobile tire service",
     "lastUpdated": "Last updated: October 28, 2025",
     "sections": {
       "overview": {
         "title": "General Terms",
         "content": [
-          "These Terms of Service govern the rights and obligations between Truck Hub Ltd., [Registration Number], with registered office at [Address] (hereinafter \"Provider\") and the customer (hereinafter \"Customer\") in the provision of mobile tire services for commercial vehicles.",
+          "These Terms of Service govern the rights and obligations between TruckHub Ltd., [Registration Number], with registered office at [Address] (hereinafter \"Provider\") and the customer (hereinafter \"Customer\") in the provision of mobile tire services for commercial vehicles.",
           "By entering into a contract or ordering a service, the Customer confirms that they have read these Terms of Service and agree to them."
         ]
       },
@@ -283,7 +279,7 @@
           "Mobile tire service: tire replacement, mounting and dismounting directly at the customer's location",
           "24/7 emergency service: round-the-clock availability in case of breakdown or emergency",
           "Tire repair: professional repair of damaged tires",
-          "Tire sales: supply and sale of Truck Hub and other tire brands",
+          "Tire sales: supply and sale of TruckHub and other tire brands",
           "Expert consultation: advice on selecting the right tires",
           "Regular maintenance: checking tire pressure, wear, and tread depth"
         ]
@@ -299,7 +295,7 @@
       "warranty": {
         "title": "Warranty and Claims",
         "content": [
-          "We provide a 6-year warranty on all Truck Hub tires against manufacturing defects. The warranty does not cover mechanical damage, improper use, or natural wear.",
+          "We provide a 6-year warranty on all TruckHub tires against manufacturing defects. The warranty does not cover mechanical damage, improper use, or natural wear.",
           "We provide a 12-month warranty on services rendered (mounting, repair).",
           "Claims must be submitted in writing or electronically without undue delay after discovering the defect. The Provider will process the claim within 30 days of receipt."
         ]
@@ -347,21 +343,5 @@
       "title": "Questions about Terms of Service?",
       "content": "Contact us and we'll be happy to explain everything."
     }
-  },
-  "cookies": {
-    "title": "Cookie Settings",
-    "subtitle": "We respect your privacy",
-    "description": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
-    "acceptAll": "Accept All",
-    "necessaryOnly": "Necessary Only",
-    "savePreferences": "Save Preferences",
-    "customizeSettings": "Customize Settings",
-    "privacyPolicy": "Read our Privacy Policy",
-    "necessary": "Necessary Cookies",
-    "necessaryDesc": "Essential for the website to function properly. Cannot be disabled.",
-    "analytics": "Analytics Cookies",
-    "analyticsDesc": "Help us understand how visitors interact with our website.",
-    "marketing": "Marketing Cookies",
-    "marketingDesc": "Used to deliver personalized advertisements."
   }
 }

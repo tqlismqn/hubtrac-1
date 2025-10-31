@@ -5,7 +5,7 @@ export default function StructuredData() {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'HUBTRAC Mobile Tire Service',
+    name: 'TruckHub Mobile Tire Service',
     description: 'Professional mobile tire service for commercial trucks in Europe',
     url: 'https://hubtrac-mobile-service.vercel.app', // Update with actual domain
     logo: 'https://hubtrac-mobile-service.vercel.app/logo.png', // TO ADD: Add logo image
@@ -27,7 +27,7 @@ export default function StructuredData() {
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'AutomotiveBusiness',
-    name: 'HUBTRAC Mobile Tire Service',
+    name: 'TruckHub Mobile Tire Service',
     image: 'https://hubtrac-mobile-service.vercel.app/hero-image.jpg', // TO ADD: Add hero image
     '@id': 'https://hubtrac-mobile-service.vercel.app',
     url: 'https://hubtrac-mobile-service.vercel.app',
@@ -82,7 +82,7 @@ export default function StructuredData() {
     serviceType: 'Mobile Tire Replacement Service',
     provider: {
       '@type': 'Organization',
-      name: 'HUBTRAC Mobile Tire Service',
+      name: 'TruckHub Mobile Tire Service',
     },
     areaServed: [
       {
@@ -138,15 +138,15 @@ export default function StructuredData() {
     },
   };
 
-  // Product Schema (HUBTRAC Tires)
+  // Product Schema (TruckHub Tires)
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    name: 'HUBTRAC Commercial Truck Tires',
+    name: 'TruckHub Commercial Truck Tires',
     description: 'Premium commercial truck tires with 6-year warranty. Available in HIGHWAY, MIXED, URBAN, and COACH categories.',
     brand: {
       '@type': 'Brand',
-      name: 'HUBTRAC',
+      name: 'TruckHub',
     },
     offers: {
       '@type': 'AggregateOffer',

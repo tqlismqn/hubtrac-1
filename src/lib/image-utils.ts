@@ -44,7 +44,7 @@ export const BLUR_DATA_URLS = {
   // Gray placeholder for general use
   gray: generateBlurDataURL(8, 8, '#e5e7eb'),
 
-  // Red-tinted placeholder for HUBTRAC brand images
+  // Red-tinted placeholder for TruckHub brand images
   brandRed: generateBlurDataURL(8, 8, '#fecaca'),
 
   // Dark placeholder for hero/background images
@@ -106,7 +106,7 @@ export function generateGradientBlur(
  *
  * <Image
  *   src="/images/tire.webp"
- *   alt="HUBTRAC Tire"
+ *   alt="TruckHub Tire"
  *   width={600}
  *   height={600}
  *   placeholder="blur"

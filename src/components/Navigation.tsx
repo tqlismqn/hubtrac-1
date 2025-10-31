@@ -83,7 +83,7 @@ export default function Navigation({ dict, currentLocale, onLocaleChange }: Navi
               <div className={`text-2xl font-extrabold transition-colors duration-300 ${
                 isScrolled ? 'text-red-600' : 'text-white'
               }`}>
-                Truck Hub
+                TruckHub
               </div>
             </button>
 

@@ -1,4 +1,4 @@
-// HUBTRAC Tire Product Data
+// TruckHub Tire Product Data
 // Source: https://www.hubtractyre.com
 
 export interface TireSpecification {
@@ -18,7 +18,7 @@ export interface TireModel {
   id: string;
   name: string;
   category: 'HIGHWAY' | 'REGIONAL' | 'URBAN' | 'COACH' | 'MIXED';
-  productLine: 'HUBTRAC 2.0' | 'CLASSIC';
+  productLine: 'TruckHub 2.0' | 'CLASSIC';
   description: string;
   features: string[];
   benefits: string[];
@@ -120,7 +120,7 @@ export const tireModels: TireModel[] = [
     id: 'coach-g21',
     name: 'COACH G21',
     category: 'COACH',
-    productLine: 'HUBTRAC 2.0',
+    productLine: 'TruckHub 2.0',
     description: 'Premium coach tire designed for long-haul passenger transport with advanced technologies for extended service life and optimal performance.',
     features: [
       'SOCT Technology for optimized tire wear',
@@ -171,7 +171,7 @@ export const tireModels: TireModel[] = [
     id: 'highway-t21',
     name: 'HIGHWAY T21',
     category: 'HIGHWAY',
-    productLine: 'HUBTRAC 2.0',
+    productLine: 'TruckHub 2.0',
     description: 'Premium highway tire engineered for long-distance transport with focus on fuel efficiency and durability.',
     features: [
       'Optimized for highway applications',
@@ -213,7 +213,7 @@ export const tireModels: TireModel[] = [
     id: 'regional-t15',
     name: 'REGIONAL T15',
     category: 'REGIONAL',
-    productLine: 'HUBTRAC 2.0',
+    productLine: 'TruckHub 2.0',
     description: 'Advanced regional tire designed for mixed highway and urban applications with excellent traction and durability.',
     features: [
       'Versatile tread pattern',
@@ -234,7 +234,7 @@ export const tireModels: TireModel[] = [
     id: 'regional-t22',
     name: 'REGIONAL T22',
     category: 'REGIONAL',
-    productLine: 'HUBTRAC 2.0',
+    productLine: 'TruckHub 2.0',
     description: 'High-performance regional tire for demanding applications with focus on mileage and fuel economy.',
     features: [
       'Advanced tread compound',

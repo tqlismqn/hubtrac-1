@@ -33,7 +33,7 @@ export const event = ({ action, category, label, value }: GtagEvent) => {
   }
 };
 
-// Predefined events for HUBTRAC mobile service
+// Predefined events for TruckHub mobile service
 
 // Contact form submission
 export const trackContactFormSubmit = () => {

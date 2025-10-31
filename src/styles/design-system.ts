@@ -1,4 +1,4 @@
-// HUBTRAC Design System
+// TruckHub Design System
 // Color tokens, typography, spacing, and animation presets
 
 export const colors = {
@@ -110,92 +110,6 @@ export const animations = {
     },
   },
 } as const;
-
-// Microinteractions for enhanced UX
-export const microinteractions = {
-  // Button interactions
-  buttonTap: {
-    whileTap: { scale: 0.95 },
-    whileHover: { scale: 1.02 },
-    transition: { type: 'spring', stiffness: 400, damping: 17 },
-  },
-  // Card hover lift
-  cardHover: {
-    whileHover: { y: -8, transition: { duration: 0.3 } },
-    whileTap: { scale: 0.98 },
-  },
-  // Icon bounce
-  iconBounce: {
-    whileHover: {
-      scale: 1.1,
-      rotate: [0, -10, 10, -10, 0] as number[],
-      transition: { duration: 0.5 }
-    },
-  },
-  // Smooth scale
-  scaleOnHover: {
-    whileHover: { scale: 1.05 },
-    whileTap: { scale: 0.95 },
-    transition: { type: 'spring', stiffness: 300, damping: 20 },
-  },
-  // Magnetic effect (subtle movement towards cursor)
-  magnetic: {
-    whileHover: { scale: 1.05 },
-    transition: { type: 'spring', stiffness: 300, damping: 10 },
-  },
-  // Glow effect
-  glowOnHover: {
-    whileHover: {
-      boxShadow: '0 0 20px rgba(220, 38, 38, 0.5)',
-      transition: { duration: 0.3 },
-    },
-  },
-  // Shimmer effect (for loading states)
-  shimmer: {
-    animate: {
-      backgroundPosition: ['200% 0', '-200% 0'] as string[],
-      transition: {
-        duration: 2,
-        repeat: Infinity,
-        ease: 'linear',
-      },
-    },
-  },
-  // Float animation
-  float: {
-    animate: {
-      y: [0, -10, 0] as number[],
-      transition: {
-        duration: 3,
-        repeat: Infinity,
-        ease: 'easeInOut',
-      },
-    },
-  },
-  // Pulse animation
-  pulse: {
-    animate: {
-      scale: [1, 1.05, 1] as number[],
-      transition: {
-        duration: 2,
-        repeat: Infinity,
-        ease: 'easeInOut',
-      },
-    },
-  },
-} as const;
-
-// Accessibility: Respect user's motion preferences
-export const getReducedMotionVariants = (shouldReduce: boolean, normalVariants: any) => {
-  if (shouldReduce) {
-    return {
-      initial: { opacity: 0 },
-      animate: { opacity: 1 },
-      transition: { duration: 0.1 },
-    };
-  }
-  return normalVariants;
-};
 
 export const shadows = {
   sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',

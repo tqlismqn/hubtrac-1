@@ -2,32 +2,29 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
-import ClientProviders from "@/components/ClientProviders";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: "swap", // Optimize font loading for better FCP
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-  display: "swap", // Optimize font loading for better FCP
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://truckhub-mobile-service.vercel.app'), // Update with actual domain
+  metadataBase: new URL('https://hubtrac-mobile-service.vercel.app'), // Update with actual domain
   title: {
-    default: 'Truck Hub Mobile Tire Service | Professional Truck Tire Solutions',
-    template: '%s | Truck Hub Mobile Service'
+    default: 'TruckHub Mobile Tire Service | Professional Truck Tire Solutions',
+    template: '%s | TruckHub Mobile Service'
   },
-  description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners across 9 factories. Truck Hub certified tires with 6-year warranty. Service in Slovakia, Germany, and Austria.',
+  description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners across 9 factories. TruckHub certified tires with 6-year warranty. Service in Slovakia, Germany, and Austria.',
   keywords: [
     'mobile tire service',
     'truck tires',
     'commercial vehicle tires',
-    'Truck Hub',
+    'TruckHub',
     'tire replacement',
     'emergency tire service',
     'LKW Reifen',
@@ -41,9 +38,9 @@ export const metadata: Metadata = {
     'heavy duty tires',
     'fleet tire service'
   ],
-  authors: [{ name: 'Truck Hub Europe' }],
-  creator: 'Truck Hub Europe',
-  publisher: 'Truck Hub Europe',
+  authors: [{ name: 'TruckHub Europe' }],
+  creator: 'TruckHub Europe',
+  publisher: 'TruckHub Europe',
   formatDetection: {
     email: false,
     address: false,
@@ -66,24 +63,24 @@ export const metadata: Metadata = {
     locale: 'en_US',
     alternateLocale: ['sk_SK', 'de_DE'],
     url: 'https://hubtrac-mobile-service.vercel.app', // Update with actual domain
-    title: 'HUBTRAC Mobile Tire Service | Professional Truck Tire Solutions',
-    description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners. HUBTRAC certified tires with 6-year warranty.',
-    siteName: 'HUBTRAC Mobile Service',
+    title: 'TruckHub Mobile Tire Service | Professional Truck Tire Solutions',
+    description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners. TruckHub certified tires with 6-year warranty.',
+    siteName: 'TruckHub Mobile Service',
     images: [
       {
         url: '/og-image.jpg', // TO ADD: Create 1200x630px Open Graph image
         width: 1200,
         height: 630,
-        alt: 'HUBTRAC Mobile Tire Service - Professional Truck Tire Solutions',
+        alt: 'TruckHub Mobile Tire Service - Professional Truck Tire Solutions',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HUBTRAC Mobile Tire Service | Professional Truck Tire Solutions',
+    title: 'TruckHub Mobile Tire Service | Professional Truck Tire Solutions',
     description: 'Professional mobile tire service for commercial trucks. 24/7 emergency tire replacement, 49+ years experience, 800+ partners.',
     images: ['/twitter-image.jpg'], // TO ADD: Create 1200x600px Twitter image
-    creator: '@HUBTRAC', // Update if Twitter handle exists
+    creator: '@TruckHub', // Update if Twitter handle exists
   },
   alternates: {
     canonical: 'https://hubtrac-mobile-service.vercel.app', // Update with actual domain
@@ -120,9 +117,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <StructuredData />
-        <ClientProviders>
-          {children}
-        </ClientProviders>
+        {children}
       </body>
     </html>
   );

@@ -119,7 +119,7 @@ export default function CertificateModal({ certificate, isOpen, onClose }: Certi
                   {/* Footer Info */}
                   <div className="p-4 bg-gray-50 border-t border-gray-200 text-center text-sm text-gray-600">
                     <p>
-                      <span className="font-semibold text-red-600">HUBTRAC</span> - ECE, DOT, ISO Certified Products
+                      <span className="font-semibold text-red-600">TruckHub</span> - ECE, DOT, ISO Certified Products
                     </p>
                   </div>
                 </div>

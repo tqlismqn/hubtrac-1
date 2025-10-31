@@ -1,5 +1,5 @@
 /**
- * SEO Configuration for HUBTRAC Mobile Tire Service
+ * SEO Configuration for TruckHub Mobile Tire Service
  * Centralized SEO settings for multi-language support
  */
 
@@ -12,13 +12,13 @@ export const seoConfig = {
 // Language-specific metadata
 export const languageMetadata = {
   en: {
-    title: 'HUBTRAC Mobile Tire Service | Professional Truck Tire Solutions',
-    description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners across 9 factories. HUBTRAC certified tires with 6-year warranty. Service in Slovakia, Germany, and Austria.',
+    title: 'TruckHub Mobile Tire Service | Professional Truck Tire Solutions',
+    description: 'Professional mobile tire service for commercial trucks in Europe. 24/7 emergency tire replacement with 49+ years experience, 800+ partners across 9 factories. TruckHub certified tires with 6-year warranty. Service in Slovakia, Germany, and Austria.',
     keywords: [
       'mobile tire service',
       'truck tires',
       'commercial vehicle tires',
-      'HUBTRAC',
+      'TruckHub',
       'tire replacement',
       'emergency tire service',
       '24/7 tire service',
@@ -31,13 +31,13 @@ export const languageMetadata = {
     locale: 'en_US',
   },
   sk: {
-    title: 'HUBTRAC Mobilný Servis Pneumatík | Profesionálne Riešenia pre Nákladné Vozidlá',
-    description: 'Profesionálny mobilný servis pneumatík pre nákladné vozidlá v Európe. 24/7 núdzová výmena pneumatík s viac ako 49-ročnými zkúsenosťami, 800+ partnerov v 9 továrňach. HUBTRAC certifikované pneumatiky so 6-ročnou zárukou. Služby na Slovensku, v Nemecku a Rakúsku.',
+    title: 'TruckHub Mobilný Servis Pneumatík | Profesionálne Riešenia pre Nákladné Vozidlá',
+    description: 'Profesionálny mobilný servis pneumatík pre nákladné vozidlá v Európe. 24/7 núdzová výmena pneumatík s viac ako 49-ročnými zkúsenosťami, 800+ partnerov v 9 továrňach. TruckHub certifikované pneumatiky so 6-ročnou zárukou. Služby na Slovensku, v Nemecku a Rakúsku.',
     keywords: [
       'mobilný servis pneumatík',
       'pneumatiky pre kamióny',
       'pneumatiky pre nákladné vozidlá',
-      'HUBTRAC',
+      'TruckHub',
       'výmena pneumatík',
       'núdzový servis pneumatík',
       '24/7 servis pneumatík',
@@ -49,13 +49,13 @@ export const languageMetadata = {
     locale: 'sk_SK',
   },
   de: {
-    title: 'HUBTRAC Mobiler Reifenservice | Professionelle LKW-Reifenlösungen',
-    description: 'Professioneller mobiler Reifenservice für Nutzfahrzeuge in Europa. 24/7 Notreifen-Austausch mit über 49 Jahren Erfahrung, 800+ Partner in 9 Fabriken. HUBTRAC zertifizierte Reifen mit 6 Jahren Garantie. Service in der Slowakei, Deutschland und Österreich.',
+    title: 'TruckHub Mobiler Reifenservice | Professionelle LKW-Reifenlösungen',
+    description: 'Professioneller mobiler Reifenservice für Nutzfahrzeuge in Europa. 24/7 Notreifen-Austausch mit über 49 Jahren Erfahrung, 800+ Partner in 9 Fabriken. TruckHub zertifizierte Reifen mit 6 Jahren Garantie. Service in der Slowakei, Deutschland und Österreich.',
     keywords: [
       'mobiler Reifenservice',
       'LKW-Reifen',
       'Nutzfahrzeugreifen',
-      'HUBTRAC',
+      'TruckHub',
       'Reifenwechsel',
       'Notfall-Reifenservice',
       '24/7 Reifenservice',
@@ -105,14 +105,14 @@ export function generatePageMetadata(
 export const ogImageConfig = {
   width: 1200,
   height: 630,
-  alt: 'HUBTRAC Mobile Tire Service - Professional Truck Tire Solutions',
+  alt: 'TruckHub Mobile Tire Service - Professional Truck Tire Solutions',
 };
 
 // Twitter image dimensions
 export const twitterImageConfig = {
   width: 1200,
   height: 600,
-  alt: 'HUBTRAC Mobile Tire Service - Professional Truck Tire Solutions',
+  alt: 'TruckHub Mobile Tire Service - Professional Truck Tire Solutions',
 };
 
 // Core Web Vitals targets

@@ -1,0 +1,257 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e11]
+  - main [ref=e12]:
+    - navigation [ref=e13]:
+      - generic [ref=e15]:
+        - button "HUBTRAC" [ref=e16]:
+          - generic [ref=e17]: HUBTRAC
+        - generic [ref=e18]:
+          - button "Domov" [ref=e19]
+          - button "Služby" [ref=e20]
+          - button "Produkty" [ref=e21]
+          - button "O nás" [ref=e22]
+          - button "Kontakt" [ref=e23]
+        - button "Change language" [ref=e26]:
+          - generic [ref=e27]: 🇸🇰
+          - generic [ref=e28]: sk
+    - generic [ref=e35]:
+      - img [ref=e38]
+      - heading "HUBTRAC" [level=1] [ref=e44]
+      - heading "Profesionálny mobilný servis pneumatík pre nákladné vozidlá" [level=2] [ref=e46]
+      - paragraph [ref=e47]: Váš európsky partner pre pneumatiky komerčných vozidiel - rýchly, spoľahlivý, profesionálny
+      - generic [ref=e48]:
+        - button "Kontaktujte nás" [ref=e49]:
+          - text: Kontaktujte nás
+          - img [ref=e51]
+        - button "Naše služby" [ref=e53]
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e61]:
+          - img [ref=e64]
+          - generic [ref=e67]: 0+
+          - paragraph [ref=e68]: Viac ako 49 rokov skúseností
+        - generic [ref=e71]:
+          - img [ref=e74]
+          - generic [ref=e79]: 0+
+          - paragraph [ref=e80]: 800+ partnerov po celom svete
+        - generic [ref=e83]:
+          - img [ref=e86]
+          - generic [ref=e88]: "0"
+          - paragraph [ref=e89]: 9 výrobných závodov
+      - generic [ref=e91]:
+        - paragraph [ref=e92]: ECE, DOT, ISO certifikované produkty
+        - generic [ref=e93]:
+          - generic [ref=e94]: ECE
+          - generic [ref=e95]: DOT
+          - generic [ref=e96]: ISO
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - heading "Naše služby" [level=2] [ref=e100]
+        - paragraph [ref=e101]: Komplexný servis pneumatík pre nákladné vozidlá priamo na vašom mieste
+      - generic [ref=e102]:
+        - generic [ref=e106]:
+          - img [ref=e109]
+          - heading "Mobilný servis" [level=3] [ref=e114]
+          - paragraph [ref=e115]: Prichádzame k vám - výmena a oprava pneumatík priamo na ceste alebo vo vašom areáli
+        - generic [ref=e119]:
+          - img [ref=e122]
+          - heading "Pohotovostná služba 24/7" [level=3] [ref=e125]
+          - paragraph [ref=e126]: Neustála dostupnosť pre vaše naliehavé potreby kdykoľvek a kdekoľvek
+        - generic [ref=e130]:
+          - img [ref=e133]
+          - heading "Odborné poradenstvo" [level=3] [ref=e135]
+          - paragraph [ref=e136]: Pomôžeme vám vybrať správne pneumatiky pre vaše vozidlo a podmienky použitia
+        - generic [ref=e140]:
+          - img [ref=e143]
+          - heading "Záruka 6 rokov" [level=3] [ref=e145]
+          - paragraph [ref=e146]: Všetky naše produkty majú komplexnú 6-ročnú záruku
+    - generic [ref=e148]:
+      - generic [ref=e149]:
+        - heading "Pneumatiky pre každú potrebu" [level=2] [ref=e150]
+        - paragraph [ref=e151]: Prémiová kvalita pneumatík HUBTRAC pre všetky typy komerčných vozidiel
+      - generic [ref=e152]:
+        - generic [ref=e156]:
+          - generic [ref=e171]:
+            - heading "HIGHWAY S23" [level=3] [ref=e172]
+            - paragraph [ref=e173]: Riešenie na diaľnicu pre riadiacu nápravu - vynikajúca ovládateľnosť a životnosť
+          - generic [ref=e176]: →
+        - generic [ref=e182]:
+          - generic [ref=e197]:
+            - heading "HIGHWAY T22" [level=3] [ref=e198]
+            - paragraph [ref=e199]: Traktorová pneumatika na diaľnicu - optimalizovaná pre jazdný odpor a účinnosť
+          - generic [ref=e202]: →
+        - generic [ref=e208]:
+          - generic [ref=e223]:
+            - heading "MIXED S21" [level=3] [ref=e224]
+            - paragraph [ref=e225]: Univerzálna pneumatika na zmiešané použitie - vynikajúci záber na každom povrchu
+          - generic [ref=e228]: →
+        - generic [ref=e234]:
+          - generic [ref=e249]:
+            - heading "URBAN G21" [level=3] [ref=e250]
+            - paragraph [ref=e251]: Mestská hnacia pneumatika - robustná konštrukcia pre miestnu dopravu
+          - generic [ref=e254]: →
+        - generic [ref=e260]:
+          - generic [ref=e275]:
+            - heading "COACH G21" [level=3] [ref=e276]
+            - paragraph [ref=e277]: Prémiová pneumatika pre autobusy a autokaře - komfort a bezpečnosť
+          - generic [ref=e280]: →
+      - paragraph [ref=e284]: 6 rokov záruky • Certifikáty
+    - generic [ref=e286]:
+      - heading "Prečo si vybrať HUBTRAC" [level=2] [ref=e288]
+      - generic [ref=e289]:
+        - generic [ref=e293]:
+          - img [ref=e296]
+          - heading "6 rokov záruky" [level=3] [ref=e298]
+          - paragraph [ref=e299]: Komplexná ochrana vašej investície
+        - generic [ref=e304]:
+          - img [ref=e307]
+          - heading "Certifikáty" [level=3] [ref=e310]
+          - paragraph [ref=e311]: ECE, DOT, ISO certifikované produkty
+        - generic [ref=e316]:
+          - img [ref=e319]
+          - heading "Pokročilá technológia" [level=3] [ref=e322]
+          - paragraph [ref=e323]: Najmodernejšie výrobné procesy a materiály
+        - generic [ref=e328]:
+          - img [ref=e331]
+          - heading "Podpora 24/7" [level=3] [ref=e333]
+          - paragraph [ref=e334]: Vždy pripravení pomôcť, kedykoľvek potrebujete
+        - generic [ref=e339]:
+          - img [ref=e342]
+          - heading "Rýchla reakcia" [level=3] [ref=e345]
+          - paragraph [ref=e346]: Krátke čakacie doby a flexibilné časové rozvrhy
+        - generic [ref=e351]:
+          - img [ref=e354]
+          - heading "Profesionálny tím" [level=3] [ref=e359]
+          - paragraph [ref=e360]: Odborne vyškolení technici s mnohými rokmi skúseností
+      - generic [ref=e363]:
+        - paragraph [ref=e364]: 6 rokov záruky
+        - paragraph [ref=e365]: ECE, DOT, ISO certifikované produkty
+    - generic [ref=e367]:
+      - generic [ref=e368]:
+        - heading "Kontaktujte nás" [level=2] [ref=e369]
+        - paragraph [ref=e370]: Napíšte nám a my sa vám ozveme čo najskôr
+      - generic [ref=e371]:
+        - generic [ref=e373]:
+          - heading "Kontakt" [level=3] [ref=e375]
+          - generic [ref=e376]:
+            - generic [ref=e377]:
+              - img [ref=e379]
+              - generic [ref=e381]:
+                - paragraph [ref=e382]: Telefón
+                - paragraph [ref=e383]: +421 XXX XXX XXX
+            - generic [ref=e384]:
+              - img [ref=e386]
+              - generic [ref=e389]:
+                - paragraph [ref=e390]: E-mail
+                - paragraph [ref=e391]: info@hubtrac-example.com
+            - generic [ref=e392]:
+              - img [ref=e394]
+              - generic [ref=e397]:
+                - paragraph [ref=e398]: Kontakt
+                - paragraph [ref=e399]: Adresa TBD, Slovensko
+          - generic [ref=e400]:
+            - heading "Podpora 24/7" [level=4] [ref=e401]
+            - paragraph [ref=e402]: Krátke čakacie doby a flexibilné časové rozvrhy
+        - generic [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]: Meno a priezvisko
+            - textbox "Meno a priezvisko" [ref=e408]:
+              - /placeholder: Ján Novák
+          - generic [ref=e409]:
+            - generic [ref=e410]: Telefón
+            - textbox "Telefón" [ref=e412]:
+              - /placeholder: +421 XXX XXX XXX
+          - generic [ref=e413]:
+            - generic [ref=e414]: E-mail
+            - textbox "E-mail" [ref=e416]:
+              - /placeholder: jan.novak@example.com
+          - generic [ref=e417]:
+            - generic [ref=e418]: Typ služby
+            - combobox "Typ služby" [ref=e420]:
+              - option "Vyberte službu" [selected]
+              - option "Mobilný servis"
+              - option "Pohotovostná služba"
+              - option "Konzultácia"
+              - option "Nákup pneumatík"
+              - option "Iné"
+          - generic [ref=e421]:
+            - generic [ref=e422]:
+              - generic [ref=e423]: Správa
+              - generic [ref=e424]: 0/500
+            - textbox "Správa" [ref=e426]:
+              - /placeholder: Prosím, popíšte vašu potrebu...
+          - button "Odoslať správu" [ref=e427]:
+            - text: Odoslať správu
+            - img [ref=e428]
+    - generic [ref=e432]:
+      - generic [ref=e433]:
+        - generic [ref=e434]:
+          - heading "HUBTRAC" [level=3] [ref=e435]
+          - paragraph [ref=e436]: Váš dôveryhodný európsky partner pre pneumatiky komerčných vozidiel
+          - generic [ref=e437]:
+            - generic [ref=e439]: H
+            - generic [ref=e440]: Professional Tire Service
+        - generic [ref=e441]:
+          - heading "Rýchle odkazy" [level=4] [ref=e442]
+          - list [ref=e443]:
+            - listitem [ref=e444]:
+              - button "Domov" [ref=e445]: Domov
+            - listitem [ref=e446]:
+              - button "Služby" [ref=e447]: Služby
+            - listitem [ref=e448]:
+              - button "Produkty" [ref=e449]: Produkty
+            - listitem [ref=e450]:
+              - button "O nás" [ref=e451]: O nás
+            - listitem [ref=e452]:
+              - button "Kontakt" [ref=e453]: Kontakt
+        - generic [ref=e454]:
+          - heading "Služby" [level=4] [ref=e455]
+          - list [ref=e456]:
+            - listitem [ref=e457]: Mobilný servis
+            - listitem [ref=e458]: Pohotovostná služba 24/7
+            - listitem [ref=e459]: Odborné poradenstvo
+            - listitem [ref=e460]: Záruka 6 rokov
+        - generic [ref=e461]:
+          - heading "Kontakt" [level=4] [ref=e462]
+          - list [ref=e463]:
+            - listitem [ref=e464]:
+              - link "+421 XXX XXX XXX" [ref=e465] [cursor=pointer]:
+                - /url: tel:+421 XXX XXX XXX
+                - img [ref=e467]
+                - text: +421 XXX XXX XXX
+            - listitem [ref=e469]:
+              - link "info@hubtrac-example.com" [ref=e470] [cursor=pointer]:
+                - /url: mailto:info@hubtrac-example.com
+                - img [ref=e472]
+                - text: info@hubtrac-example.com
+            - listitem [ref=e475]:
+              - img [ref=e477]
+              - generic [ref=e480]: Adresa TBD, Slovensko
+      - generic [ref=e482]:
+        - generic [ref=e483]:
+          - generic [ref=e484]: "Sledujte nás:"
+          - link "Facebook" [ref=e485] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e486]
+          - link "LinkedIn" [ref=e488] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e489]
+          - link "Instagram" [ref=e493] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e494]
+        - generic [ref=e497]:
+          - generic [ref=e498]: ECE
+          - generic [ref=e499]: DOT
+          - generic [ref=e500]: ISO
+      - generic [ref=e501]:
+        - paragraph [ref=e502]: © 2025 HUBTRAC. Všetky práva vyhradené.
+        - generic [ref=e503]:
+          - button "Ochrana súkromia" [ref=e504]
+          - generic [ref=e505]: •
+          - button "Podmienky používania" [ref=e506]
+```

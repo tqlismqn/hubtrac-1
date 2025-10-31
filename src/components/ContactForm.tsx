@@ -1,35 +1,15 @@
 'use client';
 
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
-import { Send, Phone, Mail, MapPin, Check, X } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { Send, Phone, Mail, MapPin, CheckCircle, AlertCircle } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
-import { ContactFormSkeleton } from './SkeletonLoader';
-import { useToast } from './Toast';
 
 interface ContactFormProps {
   dict: Dictionary;
 }
 
-interface FormErrors {
-  name?: string;
-  phone?: string;
-  email?: string;
-  serviceType?: string;
-  message?: string;
-}
-
-interface TouchedFields {
-  name: boolean;
-  phone: boolean;
-  email: boolean;
-  serviceType: boolean;
-  message: boolean;
-}
-
 export default function ContactForm({ dict }: ContactFormProps) {
-  const { showToast } = useToast();
-
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -38,146 +18,28 @@ export default function ContactForm({ dict }: ContactFormProps) {
     message: '',
   });
 
-  const [errors, setErrors] = useState<FormErrors>({});
-  const [touched, setTouched] = useState<TouchedFields>({
-    name: false,
-    phone: false,
-    email: false,
-    serviceType: false,
-    message: false,
-  });
-  const [status, setStatus] = useState<'idle' | 'submitting'>('idle');
-
-  // Character limits
-  const MESSAGE_MAX_LENGTH = 500;
-  const NAME_MAX_LENGTH = 100;
-
-  // Real-time validation
-  const validateField = (name: string, value: string): string | undefined => {
-    switch (name) {
-      case 'name':
-        if (!value.trim()) return 'Name is required';
-        if (value.length < 2) return 'Name must be at least 2 characters';
-        if (value.length > NAME_MAX_LENGTH) return `Name must be less than ${NAME_MAX_LENGTH} characters`;
-        if (!/^[a-zA-Z\s\u00C0-\u017F]+$/.test(value)) return 'Name can only contain letters';
-        return undefined;
-
-      case 'phone':
-        if (!value.trim()) return 'Phone number is required';
-        // Remove spaces and special characters for validation
-        const cleanPhone = value.replace(/[\s\-()]/g, '');
-        if (!/^\+?[\d]{8,15}$/.test(cleanPhone)) return 'Please enter a valid phone number';
-        return undefined;
-
-      case 'email':
-        if (!value.trim()) return 'Email is required';
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return 'Please enter a valid email address';
-        return undefined;
-
-      case 'serviceType':
-        if (!value) return 'Please select a service type';
-        return undefined;
-
-      case 'message':
-        if (!value.trim()) return 'Message is required';
-        if (value.length < 10) return 'Message must be at least 10 characters';
-        if (value.length > MESSAGE_MAX_LENGTH) return `Message must be less than ${MESSAGE_MAX_LENGTH} characters`;
-        return undefined;
-
-      default:
-        return undefined;
-    }
-  };
-
-  // Validate all fields
-  const validateForm = (): boolean => {
-    const newErrors: FormErrors = {};
-    let isValid = true;
-
-    Object.keys(formData).forEach((key) => {
-      const error = validateField(key, formData[key as keyof typeof formData]);
-      if (error) {
-        newErrors[key as keyof FormErrors] = error;
-        isValid = false;
-      }
-    });
-
-    setErrors(newErrors);
-    return isValid;
-  };
-
-  // Update validation on field change
-  useEffect(() => {
-    Object.keys(formData).forEach((key) => {
-      if (touched[key as keyof TouchedFields]) {
-        const error = validateField(key, formData[key as keyof typeof formData]);
-        setErrors((prev) => ({ ...prev, [key]: error }));
-      }
-    });
-  }, [formData, touched]);
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Mark all fields as touched
-    setTouched({
-      name: true,
-      phone: true,
-      email: true,
-      serviceType: true,
-      message: true,
-    });
-
-    if (!validateForm()) {
-      return;
-    }
-
     setStatus('submitting');
 
     // Placeholder for form submission
     // In production, integrate with Formspree, EmailJS, or Web3Forms
     setTimeout(() => {
-      // Simulate success (90% chance) or error (10% chance) for demo
-      const isSuccess = Math.random() > 0.1;
+      setStatus('success');
+      setFormData({ name: '', phone: '', email: '', serviceType: '', message: '' });
 
-      if (isSuccess) {
-        showToast(dict.contact.form.success, 'success', 6000);
-        setFormData({ name: '', phone: '', email: '', serviceType: '', message: '' });
-        setTouched({
-          name: false,
-          phone: false,
-          email: false,
-          serviceType: false,
-          message: false,
-        });
-        setErrors({});
-        setStatus('idle');
-      } else {
-        showToast(dict.contact.form.error, 'error', 8000);
-        setStatus('idle');
-      }
-    }, 2000);
+      // Reset status after 5 seconds
+      setTimeout(() => setStatus('idle'), 5000);
+    }, 1500);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value,
+      [e.target.name]: e.target.value,
     });
-  };
-
-  const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name } = e.target;
-    setTouched({
-      ...touched,
-      [name]: true,
-    });
-  };
-
-  // Check if field is valid
-  const isFieldValid = (fieldName: keyof typeof formData): boolean => {
-    return touched[fieldName] && !errors[fieldName] && formData[fieldName].trim() !== '';
   };
 
   const serviceTypes = [
@@ -284,78 +146,23 @@ export default function ContactForm({ dict }: ContactFormProps) {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative"
           >
-            {/* Skeleton Overlay when submitting */}
-            <AnimatePresence>
-              {status === 'submitting' && (
-                <motion.div
-                  key="skeleton-overlay"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  className="absolute inset-0 z-10"
-                >
-                  <ContactFormSkeleton />
-                </motion.div>
-              )}
-            </AnimatePresence>
-
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name */}
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
                   {dict.contact.form.name}
                 </label>
-                <div className="relative">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    placeholder={dict.contact.form.namePlaceholder}
-                    maxLength={NAME_MAX_LENGTH}
-                    className={`w-full px-4 py-3 pr-12 border rounded-lg focus:ring-2 focus:border-transparent transition-all outline-none ${
-                      errors.name && touched.name
-                        ? 'border-red-300 focus:ring-red-600/50'
-                        : isFieldValid('name')
-                        ? 'border-green-300 focus:ring-green-600/50'
-                        : 'border-gray-300 focus:ring-red-600'
-                    }`}
-                  />
-                  {/* Validation indicator */}
-                  <AnimatePresence>
-                    {touched.name && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        className="absolute right-3 top-1/2 -translate-y-1/2"
-                      >
-                        {errors.name ? (
-                          <X className="w-5 h-5 text-red-600" />
-                        ) : formData.name ? (
-                          <Check className="w-5 h-5 text-green-600" />
-                        ) : null}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                {/* Error message */}
-                <AnimatePresence>
-                  {errors.name && touched.name && (
-                    <motion.p
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="mt-1 text-sm text-red-600"
-                    >
-                      {errors.name}
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder={dict.contact.form.namePlaceholder}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all outline-none"
+                />
               </div>
 
               {/* Phone */}
@@ -363,52 +170,16 @@ export default function ContactForm({ dict }: ContactFormProps) {
                 <label htmlFor="phone" className="block text-sm font-semibold text-gray-900 mb-2">
                   {dict.contact.form.phone}
                 </label>
-                <div className="relative">
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    placeholder={dict.contact.form.phonePlaceholder}
-                    className={`w-full px-4 py-3 pr-12 border rounded-lg focus:ring-2 focus:border-transparent transition-all outline-none ${
-                      errors.phone && touched.phone
-                        ? 'border-red-300 focus:ring-red-600/50'
-                        : isFieldValid('phone')
-                        ? 'border-green-300 focus:ring-green-600/50'
-                        : 'border-gray-300 focus:ring-red-600'
-                    }`}
-                  />
-                  <AnimatePresence>
-                    {touched.phone && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        className="absolute right-3 top-1/2 -translate-y-1/2"
-                      >
-                        {errors.phone ? (
-                          <X className="w-5 h-5 text-red-600" />
-                        ) : formData.phone ? (
-                          <Check className="w-5 h-5 text-green-600" />
-                        ) : null}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                <AnimatePresence>
-                  {errors.phone && touched.phone && (
-                    <motion.p
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="mt-1 text-sm text-red-600"
-                    >
-                      {errors.phone}
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder={dict.contact.form.phonePlaceholder}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all outline-none"
+                />
               </div>
 
               {/* Email */}
@@ -416,52 +187,16 @@ export default function ContactForm({ dict }: ContactFormProps) {
                 <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
                   {dict.contact.form.email}
                 </label>
-                <div className="relative">
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    placeholder={dict.contact.form.emailPlaceholder}
-                    className={`w-full px-4 py-3 pr-12 border rounded-lg focus:ring-2 focus:border-transparent transition-all outline-none ${
-                      errors.email && touched.email
-                        ? 'border-red-300 focus:ring-red-600/50'
-                        : isFieldValid('email')
-                        ? 'border-green-300 focus:ring-green-600/50'
-                        : 'border-gray-300 focus:ring-red-600'
-                    }`}
-                  />
-                  <AnimatePresence>
-                    {touched.email && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        className="absolute right-3 top-1/2 -translate-y-1/2"
-                      >
-                        {errors.email ? (
-                          <X className="w-5 h-5 text-red-600" />
-                        ) : formData.email ? (
-                          <Check className="w-5 h-5 text-green-600" />
-                        ) : null}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                <AnimatePresence>
-                  {errors.email && touched.email && (
-                    <motion.p
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="mt-1 text-sm text-red-600"
-                    >
-                      {errors.email}
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  placeholder={dict.contact.form.emailPlaceholder}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all outline-none"
+                />
               </div>
 
               {/* Service Type */}
@@ -469,104 +204,38 @@ export default function ContactForm({ dict }: ContactFormProps) {
                 <label htmlFor="serviceType" className="block text-sm font-semibold text-gray-900 mb-2">
                   {dict.contact.form.serviceType}
                 </label>
-                <div className="relative">
-                  <select
-                    id="serviceType"
-                    name="serviceType"
-                    value={formData.serviceType}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    className={`w-full px-4 py-3 pr-12 border rounded-lg focus:ring-2 focus:border-transparent transition-all outline-none bg-white ${
-                      errors.serviceType && touched.serviceType
-                        ? 'border-red-300 focus:ring-red-600/50'
-                        : isFieldValid('serviceType')
-                        ? 'border-green-300 focus:ring-green-600/50'
-                        : 'border-gray-300 focus:ring-red-600'
-                    }`}
-                  >
-                    <option value="">{dict.contact.form.serviceTypePlaceholder}</option>
-                    {serviceTypes.map((type) => (
-                      <option key={type.value} value={type.value}>
-                        {type.label}
-                      </option>
-                    ))}
-                  </select>
-                  <AnimatePresence>
-                    {touched.serviceType && (
-                      <motion.div
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        className="absolute right-10 top-1/2 -translate-y-1/2 pointer-events-none"
-                      >
-                        {errors.serviceType ? (
-                          <X className="w-5 h-5 text-red-600" />
-                        ) : formData.serviceType ? (
-                          <Check className="w-5 h-5 text-green-600" />
-                        ) : null}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-                <AnimatePresence>
-                  {errors.serviceType && touched.serviceType && (
-                    <motion.p
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="mt-1 text-sm text-red-600"
-                    >
-                      {errors.serviceType}
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+                <select
+                  id="serviceType"
+                  name="serviceType"
+                  value={formData.serviceType}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all outline-none bg-white"
+                >
+                  <option value="">{dict.contact.form.serviceTypePlaceholder}</option>
+                  {serviceTypes.map((type) => (
+                    <option key={type.value} value={type.value}>
+                      {type.label}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               {/* Message */}
               <div>
-                <div className="flex justify-between items-center mb-2">
-                  <label htmlFor="message" className="block text-sm font-semibold text-gray-900">
-                    {dict.contact.form.message}
-                  </label>
-                  <span className={`text-xs ${
-                    formData.message.length > MESSAGE_MAX_LENGTH * 0.9
-                      ? 'text-red-600 font-semibold'
-                      : 'text-gray-500'
-                  }`}>
-                    {formData.message.length}/{MESSAGE_MAX_LENGTH}
-                  </span>
-                </div>
-                <div className="relative">
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    rows={5}
-                    maxLength={MESSAGE_MAX_LENGTH}
-                    placeholder={dict.contact.form.messagePlaceholder}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:border-transparent transition-all outline-none resize-none ${
-                      errors.message && touched.message
-                        ? 'border-red-300 focus:ring-red-600/50'
-                        : isFieldValid('message')
-                        ? 'border-green-300 focus:ring-green-600/50'
-                        : 'border-gray-300 focus:ring-red-600'
-                    }`}
-                  />
-                </div>
-                <AnimatePresence>
-                  {errors.message && touched.message && (
-                    <motion.p
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="mt-1 text-sm text-red-600"
-                    >
-                      {errors.message}
-                    </motion.p>
-                  )}
-                </AnimatePresence>
+                <label htmlFor="message" className="block text-sm font-semibold text-gray-900 mb-2">
+                  {dict.contact.form.message}
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={5}
+                  placeholder={dict.contact.form.messagePlaceholder}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent transition-all outline-none resize-none"
+                />
               </div>
 
               {/* Submit button */}
@@ -587,6 +256,34 @@ export default function ContactForm({ dict }: ContactFormProps) {
                   </>
                 )}
               </button>
+
+              {/* Success message */}
+              {status === 'success' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3"
+                >
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  <p className="text-green-800 text-sm font-medium">
+                    {dict.contact.form.success}
+                  </p>
+                </motion.div>
+              )}
+
+              {/* Error message */}
+              {status === 'error' && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3"
+                >
+                  <AlertCircle className="w-5 h-5 text-red-600" />
+                  <p className="text-red-800 text-sm font-medium">
+                    {dict.contact.form.error}
+                  </p>
+                </motion.div>
+              )}
             </form>
           </motion.div>
         </div>

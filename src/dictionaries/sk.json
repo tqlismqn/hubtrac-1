@@ -1,13 +1,9 @@
 {
   "hero": {
-    "trustSignature": "Dôveryhodný poskytovateľ služieb",
-    "title": "POHOTOVOSTNÍ SERVIS NON-STOP 24/7",
-    "subtitle": "Mobilná výmena pneumatík príamo u vás na ceste",
-    "emergency24_7": "Pohotovosť 24/7",
+    "title": "Profesionálny mobilný servis pneumatík pre nákladné vozidlá",
+    "subtitle": "Váš európsky partner pre pneumatiky komerčných vozidiel - rýchly, spoľahlivý, profesionálny",
     "cta": "Kontaktujte nás",
-    "ctaPrimary": "Zavolať hneď",
-    "ctaSecondary": "Prehliadnuť katalóg pneumatík",
-    "contactVia": "Napíšte nám cez"
+    "ctaSecondary": "Naše služby"
   },
   "nav": {
     "home": "Domov",
@@ -40,7 +36,7 @@
   },
   "products": {
     "title": "Pneumatiky pre každú potrebu",
-    "subtitle": "Prémiová kvalita pneumatík Truck Hub pre všetky typy komerčných vozidiel",
+    "subtitle": "Prémiová kvalita pneumatík TruckHub pre všetky typy komerčných vozidiel",
     "categories": {
       "highway_s23": {
         "name": "HIGHWAY S23",
@@ -70,7 +66,7 @@
     "factories": "9 výrobných závodov"
   },
   "benefits": {
-    "title": "Prečo si vybrať Truck Hub",
+    "title": "Prečo si vybrať TruckHub",
     "warranty": {
       "title": "6 rokov záruky",
       "description": "Komplexná ochrana vašej investície"
@@ -130,7 +126,7 @@
   },
   "footer": {
     "company": {
-      "title": "Truck Hub",
+      "title": "TruckHub",
       "description": "Váš dôveryhodný európsky partner pre pneumatiky komerčných vozidiel"
     },
     "quickLinks": {
@@ -150,16 +146,16 @@
     "social": {
       "title": "Sledujte nás"
     },
-    "copyright": "© 2025 Truck Hub. Všetky práva vyhradené.",
+    "copyright": "© 2025 TruckHub. Všetky práva vyhradené.",
     "privacy": "Ochrana súkromia",
     "terms": "Podmienky používania"
   },
   "about": {
-    "title": "O spoločnosti Truck Hub",
+    "title": "O spoločnosti TruckHub",
     "subtitle": "Váš dôveryhodný partner v mobilnom servise pneumatík",
     "history": {
       "title": "Naša história",
-      "content": "S viac ako 49 rokmi skúseností v pneumatikovom priemysle predstavuje Truck Hub európskeho lídra v riešeniach pneumatík pre komerčné vozidlá. Naša cesta začala s jednoduchým poslaním: poskytovať prémiové produkty a bezkonkurenčný servis našim klientom."
+      "content": "S viac ako 49 rokmi skúseností v pneumatikovom priemysle predstavuje TruckHub európskeho lídra v riešeniach pneumatík pre komerčné vozidlá. Naša cesta začala s jednoduchým poslaním: poskytovať prémiové produkty a bezkonkurenčný servis našim klientom."
     },
     "mission": {
       "title": "Naše poslanie",
@@ -184,7 +180,7 @@
       "overview": {
         "title": "Prehľad",
         "content": [
-          "Truck Hub s.r.o. ('my', 'nás', 'naša') je zodpovedný za spracovanie vašich osobných údajov v súlade s Nariadením Európskeho parlamentu a Rady (EÚ) 2016/679 (GDPR) a zákonom č. 18/2018 Z.z. o ochrane osobných údajov.",
+          "TruckHub s.r.o. ('my', 'nás', 'naša') je zodpovedný za spracovanie vašich osobných údajov v súlade s Nariadením Európskeho parlamentu a Rady (EÚ) 2016/679 (GDPR) a zákonom č. 18/2018 Z.z. o ochrane osobných údajov.",
           "Táto politika ochrany osobných údajov vysvetľuje, aké údaje zbierame, ako ich používame, a aké práva máte vo vzťahu k vašim osobným údajom."
         ]
       },
@@ -266,13 +262,13 @@
   },
   "terms": {
     "title": "Obchodné podmienky",
-    "subtitle": "Podmienky používania služieb mobilného servisu pneumatík Truck Hub",
+    "subtitle": "Podmienky používania služieb mobilného servisu pneumatík TruckHub",
     "lastUpdated": "Posledná aktualizácia: 28. október 2025",
     "sections": {
       "overview": {
         "title": "Všeobecné ustanovenia",
         "content": [
-          "Tieto obchodné podmienky upravujú práva a povinnosti medzi spoločnosťou Truck Hub s.r.o., IČO: [IČO], so sídlom [Adresa] (ďalej len \"poskytovateľ\") a zákazníkom (ďalej len \"zákazník\") pri poskytovaní mobilného servisu pneumatík pre nákladné a komerčné vozidlá.",
+          "Tieto obchodné podmienky upravujú práva a povinnosti medzi spoločnosťou TruckHub s.r.o., IČO: [IČO], so sídlom [Adresa] (ďalej len \"poskytovateľ\") a zákazníkom (ďalej len \"zákazník\") pri poskytovaní mobilného servisu pneumatík pre nákladné a komerčné vozidlá.",
           "Uzavretím zmluvy alebo objednaním služby zákazník potvrdzuje, že sa oboznámil s týmito obchodnými podmienkami a súhlasí s nimi."
         ]
       },
@@ -283,7 +279,7 @@
           "Mobilný servis pneumatík: výmena, montáž a demontáž pneumatík priamo na mieste zákazníka",
           "Pohotovostná služba 24/7: nepretržitá dostupnosť v prípade poruchy alebo núdze",
           "Oprava pneumatík: profesionálna oprava poškodených pneumatík",
-          "Predaj pneumatík: dodávka a predaj pneumatík značky Truck Hub a ďalších značiek",
+          "Predaj pneumatík: dodávka a predaj pneumatík značky TruckHub a ďalších značiek",
           "Odborné poradenstvo: konzultácie týkajúce sa výberu správnych pneumatík",
           "Pravidelná údržba: kontrola tlaku, opotrebenia, stavu dezénu"
         ]
@@ -299,7 +295,7 @@
       "warranty": {
         "title": "Záruka a reklamácie",
         "content": [
-          "Na všetky pneumatiky značky Truck Hub poskytujeme 6-ročnú záruku na výrobné chyby. Záruka sa nevzťahuje na mechanické poškodenie, nesprávne používanie alebo prirodzené opotrebenie.",
+          "Na všetky pneumatiky značky TruckHub poskytujeme 6-ročnú záruku na výrobné chyby. Záruka sa nevzťahuje na mechanické poškodenie, nesprávne používanie alebo prirodzené opotrebenie.",
           "Na poskytnuté služby (montáž, oprava) poskytujeme záruku 12 mesiacov.",
           "Reklamácie je potrebné uplatniť písomne alebo elektronicky bez zbytočného odkladu po zistení vady. Poskytovateľ reklamáciu vyrieši do 30 dní od jej prijatia."
         ]
@@ -347,21 +343,5 @@
       "title": "Máte otázky o obchodných podmienkach?",
       "content": "Kontaktujte nás a radi vám všetko vysvetlíme."
     }
-  },
-  "cookies": {
-    "title": "Nastavenia súborov cookie",
-    "subtitle": "Rešpektujeme vaše súkromie",
-    "description": "Používame súbory cookie na zlepšenie vášho zážitku z prehliadania, poskytovanie personalizovaného obsahu a analýzu návštevnosti. Kliknutím na 'Prijať všetko' súhlasíte s našim používaním súborov cookie.",
-    "acceptAll": "Prijať všetko",
-    "necessaryOnly": "Len nevyhnutné",
-    "savePreferences": "Uložiť preferencie",
-    "customizeSettings": "Prispôsobiť nastavenia",
-    "privacyPolicy": "Prečítajte si našu politiku ochrany osobných údajov",
-    "necessary": "Nevyhnutné súbory cookie",
-    "necessaryDesc": "Nevyhnutné pre správne fungovanie webových stránok. Nie je možné ich vypnúť.",
-    "analytics": "Analytické súbory cookie",
-    "analyticsDesc": "Pomáhajú nám pochopiť, ako návštevníci interagujú s našimi webovými stránkami.",
-    "marketing": "Marketingové súbory cookie",
-    "marketingDesc": "Používajú sa na zobrazovanie personalizovanej reklamy."
   }
 }

@@ -1,13 +1,9 @@
 {
   "hero": {
-    "trustSignature": "Vertrauenswürdiger Dienstleister",
-    "title": "NOTDIENST RUND UM DIE UHR 24/7",
-    "subtitle": "Mobiler Reifenwechsel direkt bei Ihnen vor Ort",
-    "emergency24_7": "24/7 Notdienst",
+    "title": "Professioneller mobiler Reifenservice für Nutzfahrzeuge",
+    "subtitle": "Ihr europäischer Partner für Nutzfahrzeugreifen - schnell, zuverlässig, professionell",
     "cta": "Kontakt aufnehmen",
-    "ctaPrimary": "Jetzt anrufen",
-    "ctaSecondary": "Reifenkatalog durchsuchen",
-    "contactVia": "Schreiben Sie uns über"
+    "ctaSecondary": "Unsere Dienstleistungen"
   },
   "nav": {
     "home": "Startseite",
@@ -40,7 +36,7 @@
   },
   "products": {
     "title": "Reifen für jeden Bedarf",
-    "subtitle": "Premium Truck Hub Reifenqualität für alle Arten von Nutzfahrzeugen",
+    "subtitle": "Premium TruckHub Reifenqualität für alle Arten von Nutzfahrzeugen",
     "categories": {
       "highway_s23": {
         "name": "HIGHWAY S23",
@@ -70,7 +66,7 @@
     "factories": "9 Produktionsstätten"
   },
   "benefits": {
-    "title": "Warum Truck Hub wählen",
+    "title": "Warum TruckHub wählen",
     "warranty": {
       "title": "6 Jahre Garantie",
       "description": "Umfassender Schutz Ihrer Investition"
@@ -130,7 +126,7 @@
   },
   "footer": {
     "company": {
-      "title": "Truck Hub",
+      "title": "TruckHub",
       "description": "Ihr vertrauenswürdiger europäischer Partner für Nutzfahrzeugreifen"
     },
     "quickLinks": {
@@ -150,16 +146,16 @@
     "social": {
       "title": "Folgen Sie uns"
     },
-    "copyright": "© 2025 Truck Hub. Alle Rechte vorbehalten.",
+    "copyright": "© 2025 TruckHub. Alle Rechte vorbehalten.",
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen"
   },
   "about": {
-    "title": "Über Truck Hub",
+    "title": "Über TruckHub",
     "subtitle": "Ihr vertrauenswürdiger Partner im mobilen Reifenservice",
     "history": {
       "title": "Unsere Geschichte",
-      "content": "Mit über 49 Jahren Erfahrung in der Reifenindustrie ist Truck Hub ein europäischer Marktführer für Nutzfahrzeugreifen-Lösungen. Unsere Reise begann mit einer einfachen Mission: Premium-Produkte und unübertroffenen Service für unsere Kunden zu bieten."
+      "content": "Mit über 49 Jahren Erfahrung in der Reifenindustrie ist TruckHub ein europäischer Marktführer für Nutzfahrzeugreifen-Lösungen. Unsere Reise begann mit einer einfachen Mission: Premium-Produkte und unübertroffenen Service für unsere Kunden zu bieten."
     },
     "mission": {
       "title": "Unsere Mission",
@@ -184,7 +180,7 @@
       "overview": {
         "title": "Überblick",
         "content": [
-          "Truck Hub GmbH ('wir', 'uns', 'unser') ist verantwortlich für die Verarbeitung Ihrer personenbezogenen Daten gemäß der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union (EU 2016/679) und den geltenden nationalen Datenschutzgesetzen.",
+          "TruckHub GmbH ('wir', 'uns', 'unser') ist verantwortlich für die Verarbeitung Ihrer personenbezogenen Daten gemäß der Datenschutz-Grundverordnung (DSGVO) der Europäischen Union (EU 2016/679) und den geltenden nationalen Datenschutzgesetzen.",
           "Diese Datenschutzerklärung erläutert, welche Daten wir erheben, wie wir sie verwenden und welche Rechte Sie in Bezug auf Ihre personenbezogenen Daten haben."
         ]
       },
@@ -266,13 +262,13 @@
   },
   "terms": {
     "title": "Allgemeine Geschäftsbedingungen",
-    "subtitle": "Nutzungsbedingungen für den mobilen Reifenservice von Truck Hub",
+    "subtitle": "Nutzungsbedingungen für den mobilen Reifenservice von TruckHub",
     "lastUpdated": "Letzte Aktualisierung: 28. Oktober 2025",
     "sections": {
       "overview": {
         "title": "Allgemeine Bestimmungen",
         "content": [
-          "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Rechte und Pflichten zwischen Truck Hub GmbH, [Handelsregisternummer], mit Sitz in [Adresse] (nachfolgend \"Anbieter\") und dem Kunden (nachfolgend \"Kunde\") bei der Erbringung mobiler Reifenservices für Nutzfahrzeuge.",
+          "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Rechte und Pflichten zwischen TruckHub GmbH, [Handelsregisternummer], mit Sitz in [Adresse] (nachfolgend \"Anbieter\") und dem Kunden (nachfolgend \"Kunde\") bei der Erbringung mobiler Reifenservices für Nutzfahrzeuge.",
           "Mit Abschluss des Vertrages oder Beauftragung der Dienstleistung bestätigt der Kunde, dass er diese AGB zur Kenntnis genommen hat und ihnen zustimmt."
         ]
       },
@@ -283,7 +279,7 @@
           "Mobiler Reifenservice: Reifenwechsel, Montage und Demontage direkt beim Kunden vor Ort",
           "24/7 Notdienst: Rund-um-die-Uhr-Verfügbarkeit bei Panne oder Notfall",
           "Reifenreparatur: Professionelle Reparatur beschädigter Reifen",
-          "Reifenverkauf: Lieferung und Verkauf von Truck Hub und anderen Reifenmarken",
+          "Reifenverkauf: Lieferung und Verkauf von TruckHub und anderen Reifenmarken",
           "Fachberatung: Beratung zur Auswahl der richtigen Reifen",
           "Regelmäßige Wartung: Kontrolle von Reifendruck, Verschleiß und Profiltiefe"
         ]
@@ -299,7 +295,7 @@
       "warranty": {
         "title": "Gewährleistung und Reklamationen",
         "content": [
-          "Auf alle Truck Hub-Reifen gewähren wir eine 6-jährige Garantie auf Herstellungsfehler. Die Garantie gilt nicht für mechanische Beschädigungen, unsachgemäße Verwendung oder natürlichen Verschleiß.",
+          "Auf alle TruckHub-Reifen gewähren wir eine 6-jährige Garantie auf Herstellungsfehler. Die Garantie gilt nicht für mechanische Beschädigungen, unsachgemäße Verwendung oder natürlichen Verschleiß.",
           "Auf erbrachte Dienstleistungen (Montage, Reparatur) gewähren wir 12 Monate Garantie.",
           "Reklamationen sind unverzüglich nach Feststellung des Mangels schriftlich oder elektronisch geltend zu machen. Der Anbieter wird die Reklamation innerhalb von 30 Tagen nach Eingang bearbeiten."
         ]
@@ -347,21 +343,5 @@
       "title": "Fragen zu den AGB?",
       "content": "Kontaktieren Sie uns und wir erklären Ihnen gerne alles."
     }
-  },
-  "cookies": {
-    "title": "Cookie-Einstellungen",
-    "subtitle": "Wir respektieren Ihre Privatsphäre",
-    "description": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Datenverkehr zu analysieren. Durch Klicken auf 'Alle akzeptieren' stimmen Sie unserer Verwendung von Cookies zu.",
-    "acceptAll": "Alle akzeptieren",
-    "necessaryOnly": "Nur notwendige",
-    "savePreferences": "Einstellungen speichern",
-    "customizeSettings": "Einstellungen anpassen",
-    "privacyPolicy": "Lesen Sie unsere Datenschutzrichtlinie",
-    "necessary": "Notwendige Cookies",
-    "necessaryDesc": "Erforderlich für das ordnungsgemäße Funktionieren der Website. Können nicht deaktiviert werden.",
-    "analytics": "Analyse-Cookies",
-    "analyticsDesc": "Helfen uns zu verstehen, wie Besucher mit unserer Website interagieren.",
-    "marketing": "Marketing-Cookies",
-    "marketingDesc": "Werden verwendet, um personalisierte Werbung bereitzustellen."
   }
 }
