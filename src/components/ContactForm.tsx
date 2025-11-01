@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Send, Phone, Mail, MapPin, CheckCircle, AlertCircle } from 'lucide-react';
 import { Dictionary } from '@/lib/i18n';
+import MessengerButtons from '@/components/MessengerButtons';
 
 interface ContactFormProps {
   dict: Dictionary;
@@ -131,6 +132,9 @@ export default function ContactForm({ dict }: ContactFormProps) {
                   </div>
                 </motion.div>
               </div>
+
+              {/* Messenger buttons */}
+              <MessengerButtons dict={dict} />
 
               {/* Benefits reminder */}
               <div className="mt-8 p-6 bg-gradient-to-br from-red-600 to-red-700 rounded-2xl text-white">

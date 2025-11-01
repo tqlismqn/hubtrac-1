@@ -122,6 +122,18 @@
       "phone": "+49 XXX XXX XXX",
       "email": "info@hubtrac-example.com",
       "address": "Adresse TBD, Deutschland"
+    },
+    "messengers": {
+      "title": "Schreiben Sie uns per Messenger",
+      "subtitle": "Schnelle Antwort während der Geschäftszeiten",
+      "viber": "Viber",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "aria": {
+        "viber": "Kontaktieren Sie uns über Viber",
+        "whatsapp": "Kontaktieren Sie uns über WhatsApp",
+        "telegram": "Kontaktieren Sie uns über Telegram"
+      }
     }
   },
   "footer": {

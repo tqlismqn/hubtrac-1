@@ -122,6 +122,18 @@
       "phone": "+421 XXX XXX XXX",
       "email": "info@hubtrac-example.com",
       "address": "Adresa TBD, Slovensko"
+    },
+    "messengers": {
+      "title": "Napíšte nám cez messenger",
+      "subtitle": "Rýchla odpoveď počas pracovných hodín",
+      "viber": "Viber",
+      "whatsapp": "WhatsApp",
+      "telegram": "Telegram",
+      "aria": {
+        "viber": "Kontaktujte nás cez Viber",
+        "whatsapp": "Kontaktujte nás cez WhatsApp",
+        "telegram": "Kontaktujte nás cez Telegram"
+      }
     }
   },
   "footer": {
